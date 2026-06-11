@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Place a custom order with Kara's Bakery — cookies, cakes, and sourdough baked fresh in Texas.">
+  <title>Order — Kara's Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="images/logo/logo.png" alt="" class="nav__logo-img" onerror="this.style.display='none'">
+        <span class="nav__logo-text">Kara's <span>Bakery</span></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Order</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="mobileNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Order</a></li>
+    </ul>
+  </div>
+
+  <div class="page-hero">
+    <h1>Place an Order</h1>
+    <p>Fill out the form and Kara will be in touch within 24–48 hours.</p>
+  </div>
+
+  <section class="contact-section section">
+    <div class="contact-section__inner">
+
+      <div class="contact-info">
+        <span class="label">Get in Touch</span>
+        <h2>Let's Make Something Sweet</h2>
+        <p>All orders are custom — the more detail you share, the better. For large orders or events, reach out as early as possible.</p>
+
+        <ul class="contact-info__details">
+          <li>
+            <span class="detail-label">Location</span>
+            <span>Texas, USA</span>
+          </li>
+          <li>
+            <span class="detail-label">Lead Time</span>
+            <span>2–5 days for cookies &amp; sourdough, 5–7 days for cakes</span>
+          </li>
+          <li>
+            <span class="detail-label">Events</span>
+            <span>Contact at least 2 weeks in advance for weddings and large events</span>
+          </li>
+          <li>
+            <span class="detail-label">Payment</span>
+            <span>Details discussed at order confirmation — deposit required for cakes</span>
+          </li>
+        </ul>
+
+        <div class="socials">
+          <a href="#" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            Instagram
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+
+      <!--
+        Form uses Formspree for GitHub Pages compatibility.
+        Sign up at formspree.io, create a form, and replace YOUR_FORM_ID below.
+      -->
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+        </div>
+        <div class="form-group">
+          <label for="item">What Are You Ordering?</label>
+          <select id="item" name="item" required>
+            <option value="" disabled selected>Select a category</option>
+            <option value="cookies">Cookies</option>
+            <option value="cake">Cake</option>
+            <option value="sourdough">Sourdough</option>
+            <option value="multiple">Multiple items</option>
+            <option value="other">Other / Not sure yet</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Date Needed</label>
+          <input type="date" id="date" name="date">
+        </div>
+        <div class="form-group">
+          <label for="message">Order Details</label>
+          <textarea id="message" name="message" placeholder="Tell Kara as much as you can — quantity, flavors, occasion, design ideas, dietary restrictions, etc." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--red form-submit">Send My Order Request</button>
+        <p class="form-note">Kara will respond within 24–48 hours to discuss availability and pricing.</p>
+      </form>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="brand-name">Kara's <span>Bakery</span></div>
+          <p>Handcrafted cookies, cakes, and sourdough baked with love in Texas. Custom orders welcome.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Order</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Kara's Bakery. All rights reserved.</span>
+        <span>Baked in Texas with love.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
