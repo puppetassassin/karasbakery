@@ -116,7 +116,7 @@ p { max-width: 65ch; }
   gap: 0.75rem;
 }
 
-.nav__logo-img  { height: 56px; width: auto; }
+.nav__logo-img  { height: 64px; width: auto; }
 
 .nav__logo-text {
   font-family: var(--font-script);
@@ -250,14 +250,6 @@ p { max-width: 65ch; }
   color: var(--white);
   padding: 0 1.5rem;
   max-width: 800px;
-}
-
-.hero__logo {
-  width: clamp(200px, 38vw, 380px);
-  height: auto;
-  margin: 0 auto 2rem;
-  border-radius: 50%;
-  box-shadow: 0 8px 40px rgba(0,0,0,0.5);
 }
 
 .hero__eyebrow {
