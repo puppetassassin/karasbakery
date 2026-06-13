@@ -437,6 +437,7 @@ p { max-width: 65ch; }
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 2rem;
+  justify-content: center;
 }
 
 .menu-item {
