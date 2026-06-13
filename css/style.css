@@ -252,6 +252,14 @@ p { max-width: 65ch; }
   max-width: 800px;
 }
 
+.hero__logo {
+  width: clamp(200px, 38vw, 380px);
+  height: auto;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+}
+
 .hero__eyebrow {
   display: block;
   font-size: 0.75rem;
