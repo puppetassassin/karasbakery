@@ -116,7 +116,7 @@ p { max-width: 65ch; }
   gap: 0.75rem;
 }
 
-.nav__logo-img  { height: 44px; width: auto; }
+.nav__logo-img  { height: 56px; width: auto; }
 
 .nav__logo-text {
   font-family: var(--font-script);
