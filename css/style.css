@@ -752,32 +752,34 @@ p { max-width: 65ch; }
 
 /* ---- Floating logo ---- */
 .floating-logo {
-  position: fixed;
-  bottom: 1.75rem;
-  right: 1.75rem;
-  width: 92px;
-  height: 92px;
-  z-index: 500;
-  pointer-events: none;
-  transition: filter 0.4s ease;
-  opacity: 0.88;
+     position: fixed;
+     bottom: 1.75rem;
+     right: 1.75rem;
+     width: 92px;
+     height: 92px;
+     z-index: 500;
+     pointer-events: none;
+     transition: filter 0.4s ease;
+     opacity: 1;
+     mix-blend-mode: multiply;
 }
 
 .floating-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
 }
 
 .floating-logo.on-dark {
-  filter: brightness(0) invert(1);
+     filter: invert(1);
+     mix-blend-mode: screen;
 }
 
 @media (max-width: 640px) {
-  .floating-logo {
-    width: 62px;
-    height: 62px;
-    bottom: 1rem;
-    right: 1rem;
-  }
+     .floating-logo {
+            width: 62px;
+            height: 62px;
+            bottom: 1rem;
+            right: 1rem;
+     }
 }
