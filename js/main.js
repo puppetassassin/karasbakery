@@ -18,6 +18,29 @@ document.querySelectorAll('.nav__mobile a').forEach(link => {
   });
 });
 
+// Floating logo — flip to white when over dark sections
+const floatingLogo = document.getElementById('floatingLogo');
+if (floatingLogo) {
+  const darkSections = document.querySelectorAll('.hero, .cta-banner');
+
+  function updateFloatingLogo() {
+    const rect = floatingLogo.getBoundingClientRect();
+    const cx = rect.left + rect.width / 2;
+    const cy = rect.top + rect.height / 2;
+    let onDark = false;
+    darkSections.forEach(section => {
+      const sr = section.getBoundingClientRect();
+      if (cx >= sr.left && cx <= sr.right && cy >= sr.top && cy <= sr.bottom) {
+        onDark = true;
+      }
+    });
+    floatingLogo.classList.toggle('on-dark', onDark);
+  }
+
+  window.addEventListener('scroll', updateFloatingLogo, { passive: true });
+  updateFloatingLogo();
+}
+
 const orderForm = document.getElementById('orderForm');
 if (orderForm) {
   orderForm.addEventListener('submit', async (e) => {
