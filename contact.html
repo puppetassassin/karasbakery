@@ -89,9 +89,9 @@
 
       <!--
         Form uses Formspree for GitHub Pages compatibility.
-        Sign up at formspree.io, create a form, and replace YOUR_FORM_ID below.
+        Formspree form ID: xpqeordz — emails go to kara@karasbakery.com
       -->
-      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form class="contact-form" id="orderForm" action="https://formspree.io/f/xpqeordz" method="POST">
         <div class="form-group">
           <label for="name">Your Name</label>
           <input type="text" id="name" name="name" placeholder="Jane Smith" required>
@@ -122,8 +122,14 @@
           <label for="message">Order Details</label>
           <textarea id="message" name="message" placeholder="Tell Kara as much as you can — quantity, flavors, occasion, design ideas, dietary restrictions, etc." required></textarea>
         </div>
-        <button type="submit" class="btn btn--red form-submit">Send My Order Request</button>
+        <button type="submit" class="btn btn--red form-submit" id="submitBtn">Send My Order Request</button>
         <p class="form-note">Kara will respond within 24–48 hours to discuss availability and pricing.</p>
+        <div id="formSuccess" style="display:none; margin-top:1rem; padding:1rem; background:#f0faf0; border:1px solid #4caf50; color:#2e7d32; font-size:0.9rem;">
+          Your order request was sent! Kara will be in touch within 24–48 hours.
+        </div>
+        <div id="formError" style="display:none; margin-top:1rem; padding:1rem; background:#fff0f0; border:1px solid #f44336; color:#c62828; font-size:0.9rem;">
+          Something went wrong. Please try again or email kara@karasbakery.com directly.
+        </div>
       </form>
 
     </div>
