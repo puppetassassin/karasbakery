@@ -218,8 +218,8 @@ p { max-width: 65ch; }
 .page-hero::after {
   content: '';
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 145px;
+  height: 145px;
   background-image: url('../images/floral-corner.svg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -286,14 +286,20 @@ p { max-width: 65ch; }
   max-width: 700px;
 }
 
-.hero__logo {
+.hero__logo-wrap {
   width: clamp(240px, 46vw, 420px);
-  height: auto;
+  aspect-ratio: 1;
   margin: 0 auto 2.25rem;
-  display: block;
   background: var(--white);
   border-radius: 50%;
-  clip-path: circle(48%);
+  overflow: hidden;
+}
+
+.hero__logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .hero__eyebrow {
@@ -460,8 +466,8 @@ p { max-width: 65ch; }
 .cta-banner::after {
   content: '';
   position: absolute;
-  width: 115px;
-  height: 115px;
+  width: 155px;
+  height: 155px;
   background-image: url('../images/floral-corner.svg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -575,8 +581,8 @@ p { max-width: 65ch; }
 .order-note::after {
   content: '';
   position: absolute;
-  width: 95px;
-  height: 95px;
+  width: 130px;
+  height: 130px;
   background-image: url('../images/floral-corner.svg');
   background-size: contain;
   background-repeat: no-repeat;
