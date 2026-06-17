@@ -287,10 +287,12 @@ p { max-width: 65ch; }
 }
 
 .hero__logo {
-  width: clamp(180px, 38vw, 340px);
+  width: clamp(240px, 46vw, 420px);
   height: auto;
   margin: 0 auto 2.25rem;
   display: block;
+  background: var(--white);
+  border-radius: 50%;
   clip-path: circle(48%);
 }
 
