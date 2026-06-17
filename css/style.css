@@ -218,8 +218,8 @@ p { max-width: 65ch; }
 .page-hero::after {
   content: '';
   position: absolute;
-  width: 160px;
-  height: 160px;
+  width: 120px;
+  height: 120px;
   background-image: url('../images/floral-corner.svg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -291,7 +291,7 @@ p { max-width: 65ch; }
   height: auto;
   margin: 0 auto 2.25rem;
   display: block;
-  filter: brightness(0) invert(1);
+  clip-path: circle(48%);
 }
 
 .hero__eyebrow {
@@ -458,13 +458,13 @@ p { max-width: 65ch; }
 .cta-banner::after {
   content: '';
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 115px;
+  height: 115px;
   background-image: url('../images/floral-corner.svg');
   background-size: contain;
   background-repeat: no-repeat;
   filter: brightness(0) invert(1);
-  opacity: 0.13;
+  opacity: 0.16;
   pointer-events: none;
 }
 
@@ -573,13 +573,13 @@ p { max-width: 65ch; }
 .order-note::after {
   content: '';
   position: absolute;
-  width: 160px;
-  height: 160px;
+  width: 95px;
+  height: 95px;
   background-image: url('../images/floral-corner.svg');
   background-size: contain;
   background-repeat: no-repeat;
   filter: brightness(0) invert(1);
-  opacity: 0.13;
+  opacity: 0.16;
   pointer-events: none;
 }
 
@@ -879,34 +879,35 @@ p { max-width: 65ch; }
 
 /* ---- Floating logo ---- */
 .floating-logo {
-     position: fixed;
-     bottom: 1.75rem;
-     right: 1.75rem;
-     width: 92px;
-     height: 92px;
-     z-index: 500;
-     pointer-events: none;
-     transition: filter 0.4s ease;
-     opacity: 1;
-     mix-blend-mode: multiply;
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  width: 92px;
+  height: 92px;
+  z-index: 500;
+  pointer-events: none;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: 0 2px 14px rgba(0,0,0,0.13), 0 0 0 1px rgba(0,0,0,0.06);
+  transition: box-shadow 0.4s ease;
 }
 
 .floating-logo img {
-     width: 100%;
-     height: 100%;
-     object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .floating-logo.on-dark {
-     filter: invert(1);
-     mix-blend-mode: screen;
+  box-shadow: 0 4px 22px rgba(0,0,0,0.38), 0 0 0 1.5px rgba(255,255,255,0.18);
 }
 
 @media (max-width: 640px) {
-     .floating-logo {
-            width: 62px;
-            height: 62px;
-            bottom: 1rem;
-            right: 1rem;
-     }
+  .floating-logo {
+    width: 62px;
+    height: 62px;
+    bottom: 1rem;
+    right: 1rem;
+  }
 }
