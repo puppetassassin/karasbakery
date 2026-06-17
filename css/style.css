@@ -10,15 +10,14 @@ a { color: inherit; text-decoration: none; }
 
 /* Variables */
 :root {
-  --black:       #2C1A0E;
+  --black:       #111111;
   --white:       #FFFFFF;
-  --off-white:   #FAF6EE;
-  --cream:       #F0E8D8;
+  --off-white:   #F8F8F8;
   --red:         #C41230;
   --red-dark:    #9B0E27;
-  --gray-light:  #E8DDD0;
-  --gray-mid:    #8B7355;
-  --gray-dark:   #4A3728;
+  --gray-light:  #E5E5E5;
+  --gray-mid:    #888888;
+  --gray-dark:   #333333;
 
   --font-script: 'Great Vibes', cursive;
   --font-serif:  'Dancing Script', cursive;
@@ -210,8 +209,26 @@ p { max-width: 65ch; }
   margin-top: var(--nav-height);
   padding: 4rem 1.5rem 3.5rem;
   text-align: center;
-  background: var(--cream);
+  background: var(--off-white);
+  position: relative;
+  overflow: hidden;
 }
+
+.page-hero::before,
+.page-hero::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='%23111' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M0,0 C30,20 55,45 60,100' stroke-width='0.7'/%3E%3Cpath d='M0,0 C40,8 60,30 58,58' stroke-width='0.7'/%3E%3Cpath d='M0,0 C15,35 5,60 8,90' stroke-width='0.6'/%3E%3Cpath d='M30,50 C24,43 26,34 32,32 C36,40 30,50' stroke-width='0.6'/%3E%3Cpath d='M46,34 C52,38 52,46 46,48 C42,40 46,34' stroke-width='0.6'/%3E%3Cpath d='M16,70 C10,66 9,57 16,55 C20,63 16,70' stroke-width='0.6'/%3E%3Ccircle cx='30' cy='50' r='3.5' stroke-width='0.6'/%3E%3Ccircle cx='16' cy='70' r='2.5' stroke-width='0.6'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.page-hero::before { top: 0; left: 0; }
+.page-hero::after  { bottom: 0; right: 0; transform: rotate(180deg); }
 
 .page-hero h1 { margin-bottom: 0.75rem; }
 
@@ -273,7 +290,7 @@ p { max-width: 65ch; }
 .hero__actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
 /* ---- HOME: Categories ---- */
-.categories { padding: var(--section-pad); background: var(--off-white); }
+.categories { padding: var(--section-pad); }
 
 .categories__header {
   text-align: center;
@@ -351,7 +368,7 @@ p { max-width: 65ch; }
 .category-card:hover .category-card__link { gap: 0.85rem; color: var(--white); }
 
 /* ---- HOME: About Snippet ---- */
-.about-snippet { padding: var(--section-pad); background: var(--cream); }
+.about-snippet { padding: var(--section-pad); background: var(--off-white); }
 
 .about-snippet__inner {
   max-width: var(--max-width);
@@ -402,10 +419,10 @@ p { max-width: 65ch; }
   color: var(--white);
 }
 
-.cta-banner h2 { margin-bottom: 0.75rem; color: var(--off-white); }
+.cta-banner h2 { margin-bottom: 0.75rem; }
 
 .cta-banner p {
-  color: rgba(250,246,238,0.65);
+  color: rgba(255,255,255,0.6);
   margin: 0 auto 2rem;
   font-size: 1.05rem;
 }
@@ -488,9 +505,9 @@ p { max-width: 65ch; }
   color: var(--white);
 }
 
-.order-note h3 { font-size: 1.5rem; margin-bottom: 0.6rem; color: var(--off-white); }
+.order-note h3 { font-size: 1.5rem; margin-bottom: 0.6rem; }
 
-.order-note p { margin: 0 auto 1.75rem; color: rgba(250,246,238,0.65); }
+.order-note p { margin: 0 auto 1.75rem; color: rgba(255,255,255,0.6); }
 
 /* ---- ABOUT PAGE ---- */
 .about-story__inner {
@@ -611,7 +628,7 @@ p { max-width: 65ch; }
 .socials a:hover { color: var(--red); }
 
 /* Form */
-.contact-form { background: var(--cream); padding: 2.5rem; border-radius: 20px; }
+.contact-form { background: var(--off-white); padding: 2.5rem; border-radius: 20px; }
 
 .form-group { margin-bottom: 1.5rem; }
 
@@ -665,7 +682,7 @@ p { max-width: 65ch; }
 }
 
 /* ---- Footer ---- */
-.footer { background: var(--black); color: var(--off-white); padding: 4rem 1.5rem 2rem; }
+.footer { background: var(--black); color: var(--white); padding: 4rem 1.5rem 2rem; }
 
 .footer__inner { max-width: var(--max-width); margin: 0 auto; }
 
@@ -754,6 +771,39 @@ p { max-width: 65ch; }
 
   .about-story__images { grid-template-columns: 1fr; }
   .about-story__images img:first-child { grid-column: span 1; }
+}
+
+/* ---- Floral / botanical decorative elements ---- */
+.floral-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.25rem 1.5rem;
+  color: rgba(17, 17, 17, 0.18);
+  overflow: hidden;
+}
+
+.floral-divider svg {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+}
+
+/* Hero corner botanical sprigs */
+.hero__botanical {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  pointer-events: none;
+}
+
+.hero__botanical--tr { top: 0; right: 0; }
+.hero__botanical--bl { bottom: 0; left: 0; transform: rotate(180deg); }
+
+.hero__botanical svg {
+  width: 100%;
+  height: 100%;
 }
 
 /* ---- Floating logo ---- */
