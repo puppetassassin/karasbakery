@@ -207,7 +207,7 @@ p { max-width: 65ch; }
 /* ---- Page Hero (inner pages) ---- */
 .page-hero {
   margin-top: var(--nav-height);
-  padding: 4rem 1.5rem 3.5rem;
+  padding: 4.5rem 1.5rem 4rem;
   text-align: center;
   background: var(--off-white);
   position: relative;
@@ -218,12 +218,12 @@ p { max-width: 65ch; }
 .page-hero::after {
   content: '';
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   background-image: url('../images/floral-corner.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.12;
+  opacity: 0.18;
   pointer-events: none;
 }
 
@@ -241,48 +241,80 @@ p { max-width: 65ch; }
 /* ---- HOME: Hero ---- */
 .hero {
   margin-top: var(--nav-height);
-  min-height: 88vh;
+  height: calc(92vh - var(--nav-height));
+  min-height: 560px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--white);
-  padding: 4rem 1.5rem;
+  overflow: hidden;
+  background: var(--black);
 }
 
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+}
+
+/* Floral botanical corners on hero */
+.hero::before,
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background-image: url('../images/floral-corner.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: brightness(0) invert(1);
+  opacity: 0.14;
+  pointer-events: none;
+}
+
+.hero::before { top: 0; left: 0; }
+.hero::after  { bottom: 0; right: 0; transform: rotate(180deg); }
+
 .hero__content {
+  position: relative;
   text-align: center;
-  max-width: 680px;
-  padding: 0;
+  color: var(--white);
+  padding: 0 1.5rem;
+  max-width: 700px;
 }
 
 .hero__logo {
-  width: clamp(200px, 42vw, 380px);
+  width: clamp(180px, 38vw, 340px);
   height: auto;
-  margin: 0 auto 2rem;
+  margin: 0 auto 2.25rem;
   display: block;
+  filter: brightness(0) invert(1);
 }
 
 .hero__eyebrow {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--red);
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
 }
 
 .hero__subtitle {
-  font-size: 1.1rem;
-  color: var(--gray-mid);
-  max-width: 52ch;
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.7);
+  max-width: 50ch;
   margin: 0 auto 2.25rem;
 }
 
 .hero__actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
 /* ---- HOME: Categories ---- */
-.categories { padding: var(--section-pad); }
+.categories { padding: var(--section-pad); background: var(--off-white); }
 
 .categories__header {
   text-align: center;
@@ -291,6 +323,15 @@ p { max-width: 65ch; }
 }
 
 .categories__header .label { margin-bottom: 0.75rem; }
+
+.categories__header h2::after {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 2px;
+  background: var(--red);
+  margin: 0.65rem auto 0;
+}
 
 .categories__grid {
   display: grid;
@@ -405,11 +446,30 @@ p { max-width: 65ch; }
 
 /* ---- HOME: CTA Banner ---- */
 .cta-banner {
-  padding: 5.5rem 1.5rem;
+  padding: 6rem 1.5rem;
   background: var(--black);
   text-align: center;
   color: var(--white);
+  position: relative;
+  overflow: hidden;
 }
+
+.cta-banner::before,
+.cta-banner::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: url('../images/floral-corner.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: brightness(0) invert(1);
+  opacity: 0.13;
+  pointer-events: none;
+}
+
+.cta-banner::before { top: 0; left: 0; }
+.cta-banner::after  { bottom: 0; right: 0; transform: rotate(180deg); }
 
 .cta-banner h2 { margin-bottom: 0.75rem; }
 
@@ -430,6 +490,16 @@ p { max-width: 65ch; }
   align-items: flex-end;
   gap: 2rem;
   padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.menu-section__header h2::after {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 2px;
+  background: var(--red);
+  margin-top: 0.65rem;
 }
 
 .menu-section__header h2 { flex: 1; }
@@ -491,11 +561,30 @@ p { max-width: 65ch; }
 }
 
 .order-note {
-  padding: 3.5rem 1.5rem;
+  padding: 4.5rem 1.5rem;
   background: var(--black);
   text-align: center;
   color: var(--white);
+  position: relative;
+  overflow: hidden;
 }
+
+.order-note::before,
+.order-note::after {
+  content: '';
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background-image: url('../images/floral-corner.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: brightness(0) invert(1);
+  opacity: 0.13;
+  pointer-events: none;
+}
+
+.order-note::before { top: 0; left: 0; }
+.order-note::after  { bottom: 0; right: 0; transform: rotate(180deg); }
 
 .order-note h3 { font-size: 1.5rem; margin-bottom: 0.6rem; }
 
@@ -513,6 +602,15 @@ p { max-width: 65ch; }
 
 .about-story__content .label { margin-bottom: 1rem; }
 .about-story__content h2     { margin-bottom: 1.5rem; }
+
+.about-story__content h2::after {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 2px;
+  background: var(--red);
+  margin-top: 0.65rem;
+}
 
 .about-story__content p {
   color: var(--gray-dark);
@@ -767,16 +865,16 @@ p { max-width: 65ch; }
 .floral-divider {
   display: flex;
   justify-content: center;
-  padding: 2rem 1.5rem;
+  padding: 2.5rem 1.5rem;
   overflow: hidden;
 }
 
 .floral-divider img {
   width: 100%;
-  max-width: 700px;
+  max-width: 720px;
   height: auto;
   display: block;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 /* ---- Floating logo ---- */
