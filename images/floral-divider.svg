@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 60" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Undulating vine -->
+  <path d="M0,30 C50,15 100,45 160,30 C220,15 280,45 340,30 C370,22 386,24 400,30 C414,36 430,38 460,30 C520,15 580,45 640,30 C700,15 760,45 800,30" stroke-width="0.8"/>
+
+  <!-- Center 6-petal flower -->
+  <g transform="translate(400,30)">
+    <ellipse cy="-10" rx="4.5" ry="7.5" stroke-width="0.8"/>
+    <ellipse cy="-10" rx="4.5" ry="7.5" stroke-width="0.8" transform="rotate(60)"/>
+    <ellipse cy="-10" rx="4.5" ry="7.5" stroke-width="0.8" transform="rotate(120)"/>
+    <ellipse cy="-10" rx="4.5" ry="7.5" stroke-width="0.8" transform="rotate(180)"/>
+    <ellipse cy="-10" rx="4.5" ry="7.5" stroke-width="0.8" transform="rotate(240)"/>
+    <ellipse cy="-10" rx="4.5" ry="7.5" stroke-width="0.8" transform="rotate(300)"/>
+    <circle r="4.5" stroke-width="0.8"/>
+    <circle r="1.8" fill="#111" stroke="none"/>
+  </g>
+
+  <!-- Left flower -->
+  <g transform="translate(165,43)">
+    <ellipse cy="-8" rx="3.5" ry="5.5" stroke-width="0.75"/>
+    <ellipse cy="-8" rx="3.5" ry="5.5" stroke-width="0.75" transform="rotate(72)"/>
+    <ellipse cy="-8" rx="3.5" ry="5.5" stroke-width="0.75" transform="rotate(144)"/>
+    <ellipse cy="-8" rx="3.5" ry="5.5" stroke-width="0.75" transform="rotate(216)"/>
+    <ellipse cy="-8" rx="3.5" ry="5.5" stroke-width="0.75" transform="rotate(288)"/>
+    <circle r="3.5" stroke-width="0.75"/>
+    <circle r="1.4" fill="#111" stroke="none"/>
+  </g>
+
+  <!-- Right flower -->
+  <g transform="translate(635,43)">
+    <ellipse cy="-8" rx="3.5" ry="5.5" stroke-width="0.75"/>
+    <ellipse cy="-8" rx="3.5" ry="5.5" stroke-width="0.75" transform="rotate(72)"/>
+    <ellipse cy="-8" rx="3.5" ry="5.5" stroke-width="0.75" transform="rotate(144)"/>
+    <ellipse cy="-8" rx="3.5" ry="5.5" stroke-width="0.75" transform="rotate(216)"/>
+    <ellipse cy="-8" rx="3.5" ry="5.5" stroke-width="0.75" transform="rotate(288)"/>
+    <circle r="3.5" stroke-width="0.75"/>
+    <circle r="1.4" fill="#111" stroke="none"/>
+  </g>
+
+  <!-- Leaves — left of center -->
+  <g transform="translate(82,20) rotate(-15)">
+    <path d="M0,0 Q9,-14 0,-25 Q-9,-14 0,0" stroke-width="0.75"/>
+    <line x1="0" y1="-1" x2="0" y2="-24" stroke-width="0.4"/>
+  </g>
+  <g transform="translate(112,40) rotate(25)">
+    <path d="M0,0 Q8,-12 0,-22 Q-8,-12 0,0" stroke-width="0.7"/>
+    <line x1="0" y1="-1" x2="0" y2="-21" stroke-width="0.38"/>
+  </g>
+  <g transform="translate(252,19) rotate(-20)">
+    <path d="M0,0 Q8,-12 0,-22 Q-8,-12 0,0" stroke-width="0.7"/>
+    <line x1="0" y1="-1" x2="0" y2="-21" stroke-width="0.38"/>
+  </g>
+  <g transform="translate(312,41) rotate(15)">
+    <path d="M0,0 Q7,-10 0,-18 Q-7,-10 0,0" stroke-width="0.65"/>
+    <line x1="0" y1="-1" x2="0" y2="-17" stroke-width="0.35"/>
+  </g>
+
+  <!-- Leaves — right of center (mirror) -->
+  <g transform="translate(718,20) rotate(15)">
+    <path d="M0,0 Q9,-14 0,-25 Q-9,-14 0,0" stroke-width="0.75"/>
+    <line x1="0" y1="-1" x2="0" y2="-24" stroke-width="0.4"/>
+  </g>
+  <g transform="translate(688,40) rotate(-25)">
+    <path d="M0,0 Q8,-12 0,-22 Q-8,-12 0,0" stroke-width="0.7"/>
+    <line x1="0" y1="-1" x2="0" y2="-21" stroke-width="0.38"/>
+  </g>
+  <g transform="translate(548,19) rotate(20)">
+    <path d="M0,0 Q8,-12 0,-22 Q-8,-12 0,0" stroke-width="0.7"/>
+    <line x1="0" y1="-1" x2="0" y2="-21" stroke-width="0.38"/>
+  </g>
+  <g transform="translate(488,41) rotate(-15)">
+    <path d="M0,0 Q7,-10 0,-18 Q-7,-10 0,0" stroke-width="0.65"/>
+    <line x1="0" y1="-1" x2="0" y2="-17" stroke-width="0.35"/>
+  </g>
+
+  <!-- Rose buds -->
+  <g transform="translate(42,28)">
+    <path d="M0,-3 Q-3.5,-8 0,-13 Q3.5,-8 0,-3" stroke-width="0.7"/>
+    <path d="M0,-7 Q-5.5,-10 0,-15 Q5.5,-10 0,-7" stroke-width="0.6"/>
+    <line x1="0" y1="0" x2="0" y2="-3" stroke-width="0.7"/>
+  </g>
+  <g transform="translate(758,32)">
+    <path d="M0,-3 Q-3.5,-8 0,-13 Q3.5,-8 0,-3" stroke-width="0.7"/>
+    <path d="M0,-7 Q-5.5,-10 0,-15 Q5.5,-10 0,-7" stroke-width="0.6"/>
+    <line x1="0" y1="0" x2="0" y2="-3" stroke-width="0.7"/>
+  </g>
+</svg>

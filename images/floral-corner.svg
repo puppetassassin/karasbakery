@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Main curved stem from bottom-left to top-right -->
+  <path d="M15,148 C40,115 68,85 95,58 C112,40 132,22 148,10" stroke-width="0.9"/>
+
+  <!-- Branch 1 off main stem -->
+  <path d="M68,82 C82,68 98,60 112,55" stroke-width="0.8"/>
+  <!-- Branch 2 off main stem -->
+  <path d="M100,52 C112,42 124,34 134,26" stroke-width="0.75"/>
+
+  <!-- Flower at main tip (148,10) — 6 petals -->
+  <g transform="translate(148,10)">
+    <ellipse cy="-8" rx="3.5" ry="6" stroke-width="0.8"/>
+    <ellipse cy="-8" rx="3.5" ry="6" stroke-width="0.8" transform="rotate(60)"/>
+    <ellipse cy="-8" rx="3.5" ry="6" stroke-width="0.8" transform="rotate(120)"/>
+    <ellipse cy="-8" rx="3.5" ry="6" stroke-width="0.8" transform="rotate(180)"/>
+    <ellipse cy="-8" rx="3.5" ry="6" stroke-width="0.8" transform="rotate(240)"/>
+    <ellipse cy="-8" rx="3.5" ry="6" stroke-width="0.8" transform="rotate(300)"/>
+    <circle r="3.5" stroke-width="0.8"/>
+    <circle r="1.4" fill="#111" stroke="none"/>
+  </g>
+
+  <!-- Flower at branch 1 tip (112,55) — 5 petals -->
+  <g transform="translate(112,55)">
+    <ellipse cy="-7" rx="3" ry="5" stroke-width="0.75"/>
+    <ellipse cy="-7" rx="3" ry="5" stroke-width="0.75" transform="rotate(72)"/>
+    <ellipse cy="-7" rx="3" ry="5" stroke-width="0.75" transform="rotate(144)"/>
+    <ellipse cy="-7" rx="3" ry="5" stroke-width="0.75" transform="rotate(216)"/>
+    <ellipse cy="-7" rx="3" ry="5" stroke-width="0.75" transform="rotate(288)"/>
+    <circle r="3" stroke-width="0.75"/>
+    <circle r="1.2" fill="#111" stroke="none"/>
+  </g>
+
+  <!-- Rose bud at branch 2 tip (134,26) -->
+  <g transform="translate(134,26)">
+    <path d="M0,-3 Q-4,-8 0,-14 Q4,-8 0,-3" stroke-width="0.75"/>
+    <path d="M0,-8 Q-6,-11 0,-17 Q6,-11 0,-8" stroke-width="0.65"/>
+    <line x1="0" y1="0" x2="0" y2="-3" stroke-width="0.75"/>
+  </g>
+
+  <!-- Leaves on main stem -->
+  <g transform="translate(68,82) rotate(-50)">
+    <path d="M0,0 Q10,-15 0,-27 Q-10,-15 0,0" stroke-width="0.7"/>
+    <line x1="0" y1="-1" x2="0" y2="-26" stroke-width="0.38"/>
+  </g>
+  <g transform="translate(44,110) rotate(-35)">
+    <path d="M0,0 Q9,-13 0,-23 Q-9,-13 0,0" stroke-width="0.7"/>
+    <line x1="0" y1="-1" x2="0" y2="-22" stroke-width="0.38"/>
+  </g>
+  <g transform="translate(100,50) rotate(-65)">
+    <path d="M0,0 Q8,-11 0,-20 Q-8,-11 0,0" stroke-width="0.65"/>
+    <line x1="0" y1="-1" x2="0" y2="-19" stroke-width="0.35"/>
+  </g>
+
+  <!-- Small leaves -->
+  <g transform="translate(80,68) rotate(-78)">
+    <path d="M0,0 Q6,-9 0,-16 Q-6,-9 0,0" stroke-width="0.62"/>
+  </g>
+  <g transform="translate(52,98) rotate(-22)">
+    <path d="M0,0 Q6,-9 0,-16 Q-6,-9 0,0" stroke-width="0.62"/>
+  </g>
+  <g transform="translate(118,40) rotate(-48)">
+    <path d="M0,0 Q5,-7 0,-13 Q-5,-7 0,0" stroke-width="0.6"/>
+  </g>
+
+  <!-- Small bud near base -->
+  <g transform="translate(22,140)">
+    <path d="M0,-2 Q-2.5,-6 0,-10 Q2.5,-6 0,-2" stroke-width="0.65"/>
+    <line x1="0" y1="0" x2="0" y2="-2" stroke-width="0.65"/>
+  </g>
+</svg>
