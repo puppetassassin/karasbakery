@@ -1,195 +1,201 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 60" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
-  <!-- Main undulating vine -->
-  <path d="M0,30 C50,15 100,45 160,30 C220,15 280,45 340,30 C370,22 386,24 400,30 C414,36 430,38 460,30 C520,15 580,45 640,30 C700,15 760,45 800,30" stroke-width="0.8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 60" preserveAspectRatio="none" width="100%" height="auto" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <g id="half">
+      <!-- Main undulating vine -->
+      <path d="M0,30 C50,15 100,45 160,30 C220,15 280,45 340,30 C370,22 386,24 400,30 C414,36 430,38 460,30 C520,15 580,45 640,30 C700,15 760,45 800,30" stroke-width="0.8"/>
 
-  <!-- Branch vine stems (add extra vine feel) -->
-  <path d="M95,43 Q91,33 87,22" stroke-width="0.65"/>
-  <path d="M705,17 Q709,27 713,38" stroke-width="0.65"/>
-  <!-- Small side curls off vine peaks -->
-  <path d="M160,30 Q155,20 148,14 Q145,10 148,8 Q152,7 154,10" stroke-width="0.6"/>
-  <path d="M640,30 Q645,20 652,14 Q655,10 652,8 Q648,7 646,10" stroke-width="0.6"/>
+      <!-- Branch vine stems (add extra vine feel) -->
+      <path d="M95,43 Q91,33 87,22" stroke-width="0.65"/>
+      <path d="M705,17 Q709,27 713,38" stroke-width="0.65"/>
+      <!-- Small side curls off vine peaks -->
+      <path d="M160,30 Q155,20 148,14 Q145,10 148,8 Q152,7 154,10" stroke-width="0.6"/>
+      <path d="M640,30 Q645,20 652,14 Q655,10 652,8 Q648,7 646,10" stroke-width="0.6"/>
 
-  <!-- Tendril spirals at vine peaks -->
-  <path d="M54,13 C51,7 45,6 43,10 C41,14 44,18 49,16 C51,14 52,11 50,10" stroke-width="0.5"/>
-  <path d="M546,13 C549,7 555,6 557,10 C559,14 556,18 551,16 C549,14 548,11 550,10" stroke-width="0.5"/>
+      <!-- Tendril spirals at vine peaks -->
+      <path d="M54,13 C51,7 45,6 43,10 C41,14 44,18 49,16 C51,14 52,11 50,10" stroke-width="0.5"/>
+      <path d="M546,13 C549,7 555,6 557,10 C559,14 556,18 551,16 C549,14 548,11 550,10" stroke-width="0.5"/>
 
-  <!-- ROSE BUD far left -->
-  <g transform="translate(33,22)">
-    <path d="M0,-3 Q-3.5,-8 0,-13 Q3.5,-8 0,-3" stroke-width="0.72"/>
-    <path d="M0,-7 Q-5.5,-10 0,-16 Q5.5,-10 0,-7" stroke-width="0.62"/>
-    <line x1="0" y1="0" x2="0" y2="-3" stroke-width="0.72"/>
-  </g>
+      <!-- ROSE BUD far left -->
+      <g transform="translate(33,22)">
+        <path d="M0,-3 Q-3.5,-8 0,-13 Q3.5,-8 0,-3" stroke-width="0.72"/>
+        <path d="M0,-7 Q-5.5,-10 0,-16 Q5.5,-10 0,-7" stroke-width="0.62"/>
+        <line x1="0" y1="0" x2="0" y2="-3" stroke-width="0.72"/>
+      </g>
 
-  <!-- 4-PETAL WILDFLOWER on left branch at tip (87,22) -->
-  <g transform="translate(87,22)">
-    <ellipse cy="-5.5" rx="2.8" ry="4.2" stroke-width="0.68"/>
-    <ellipse cy="-5.5" rx="2.8" ry="4.2" stroke-width="0.68" transform="rotate(90)"/>
-    <ellipse cy="-5.5" rx="2.8" ry="4.2" stroke-width="0.68" transform="rotate(180)"/>
-    <ellipse cy="-5.5" rx="2.8" ry="4.2" stroke-width="0.68" transform="rotate(270)"/>
-    <circle r="2" stroke-width="0.65"/>
-    <circle r="0.85" fill="#111" stroke="none"/>
-  </g>
+      <!-- 4-PETAL WILDFLOWER on left branch at tip (87,22) -->
+      <g transform="translate(87,22)">
+        <ellipse cy="-5.5" rx="2.8" ry="4.2" stroke-width="0.68"/>
+        <ellipse cy="-5.5" rx="2.8" ry="4.2" stroke-width="0.68" transform="rotate(90)"/>
+        <ellipse cy="-5.5" rx="2.8" ry="4.2" stroke-width="0.68" transform="rotate(180)"/>
+        <ellipse cy="-5.5" rx="2.8" ry="4.2" stroke-width="0.68" transform="rotate(270)"/>
+        <circle r="2" stroke-width="0.65"/>
+        <circle r="0.85" fill="#111" stroke="none"/>
+      </g>
 
-  <!-- CHERRY BLOSSOM left (175,26) -->
-  <g transform="translate(175,26)">
-    <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75"/>
-    <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75" transform="rotate(72)"/>
-    <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75" transform="rotate(144)"/>
-    <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75" transform="rotate(216)"/>
-    <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75" transform="rotate(288)"/>
-    <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35"/>
-    <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35" transform="rotate(72)"/>
-    <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35" transform="rotate(144)"/>
-    <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35" transform="rotate(216)"/>
-    <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35" transform="rotate(288)"/>
-    <circle r="3" stroke-width="0.7"/>
-    <circle r="1.2" fill="#111" stroke="none"/>
-  </g>
+      <!-- CHERRY BLOSSOM left (175,26) -->
+      <g transform="translate(175,26)">
+        <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75"/>
+        <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75" transform="rotate(72)"/>
+        <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75" transform="rotate(144)"/>
+        <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75" transform="rotate(216)"/>
+        <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75" transform="rotate(288)"/>
+        <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35"/>
+        <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35" transform="rotate(72)"/>
+        <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35" transform="rotate(144)"/>
+        <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35" transform="rotate(216)"/>
+        <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35" transform="rotate(288)"/>
+        <circle r="3" stroke-width="0.7"/>
+        <circle r="1.2" fill="#111" stroke="none"/>
+      </g>
 
-  <!-- TULIP BUD center-left (275,43) -->
-  <g transform="translate(275,43)">
-    <path d="M0,-1 Q-3.5,-4 -3,-9 Q-1,-10 0,-7" stroke-width="0.67"/>
-    <path d="M0,-1 Q3.5,-4 3,-9 Q1,-10 0,-7" stroke-width="0.67"/>
-    <path d="M-0.5,-6 Q-1,-9 0,-12 Q1,-9 0.5,-6" stroke-width="0.67"/>
-    <line x1="0" y1="1" x2="0" y2="-1" stroke-width="0.72"/>
-  </g>
+      <!-- TULIP BUD center-left (275,43) -->
+      <g transform="translate(275,43)">
+        <path d="M0,-1 Q-3.5,-4 -3,-9 Q-1,-10 0,-7" stroke-width="0.67"/>
+        <path d="M0,-1 Q3.5,-4 3,-9 Q1,-10 0,-7" stroke-width="0.67"/>
+        <path d="M-0.5,-6 Q-1,-9 0,-12 Q1,-9 0.5,-6" stroke-width="0.67"/>
+        <line x1="0" y1="1" x2="0" y2="-1" stroke-width="0.72"/>
+      </g>
 
-  <!-- CENTER 6-petal flower (400,30) — clean, no overlapping inner ring -->
-  <g transform="translate(400,30)">
-    <ellipse cy="-11" rx="5" ry="8.2" stroke-width="0.85"/>
-    <ellipse cy="-11" rx="5" ry="8.2" stroke-width="0.85" transform="rotate(60)"/>
-    <ellipse cy="-11" rx="5" ry="8.2" stroke-width="0.85" transform="rotate(120)"/>
-    <ellipse cy="-11" rx="5" ry="8.2" stroke-width="0.85" transform="rotate(180)"/>
-    <ellipse cy="-11" rx="5" ry="8.2" stroke-width="0.85" transform="rotate(240)"/>
-    <ellipse cy="-11" rx="5" ry="8.2" stroke-width="0.85" transform="rotate(300)"/>
-    <circle r="4.8" stroke-width="0.82"/>
-    <circle r="2" fill="#111" stroke="none"/>
-  </g>
+      <!-- CENTER 6-petal flower (400,30) — clean, no overlapping inner ring -->
+      <g transform="translate(400,30)">
+        <ellipse cy="-11" rx="5" ry="8.2" stroke-width="0.85"/>
+        <ellipse cy="-11" rx="5" ry="8.2" stroke-width="0.85" transform="rotate(60)"/>
+        <ellipse cy="-11" rx="5" ry="8.2" stroke-width="0.85" transform="rotate(120)"/>
+        <ellipse cy="-11" rx="5" ry="8.2" stroke-width="0.85" transform="rotate(180)"/>
+        <ellipse cy="-11" rx="5" ry="8.2" stroke-width="0.85" transform="rotate(240)"/>
+        <ellipse cy="-11" rx="5" ry="8.2" stroke-width="0.85" transform="rotate(300)"/>
+        <circle r="4.8" stroke-width="0.82"/>
+        <circle r="2" fill="#111" stroke="none"/>
+      </g>
 
-  <!-- TULIP BUD center-right (525,17) -->
-  <g transform="translate(525,17)">
-    <path d="M0,-1 Q-3.5,-4 -3,-9 Q-1,-10 0,-7" stroke-width="0.67"/>
-    <path d="M0,-1 Q3.5,-4 3,-9 Q1,-10 0,-7" stroke-width="0.67"/>
-    <path d="M-0.5,-6 Q-1,-9 0,-12 Q1,-9 0.5,-6" stroke-width="0.67"/>
-    <line x1="0" y1="1" x2="0" y2="-1" stroke-width="0.72"/>
-  </g>
+      <!-- TULIP BUD center-right (525,17) -->
+      <g transform="translate(525,17)">
+        <path d="M0,-1 Q-3.5,-4 -3,-9 Q-1,-10 0,-7" stroke-width="0.67"/>
+        <path d="M0,-1 Q3.5,-4 3,-9 Q1,-10 0,-7" stroke-width="0.67"/>
+        <path d="M-0.5,-6 Q-1,-9 0,-12 Q1,-9 0.5,-6" stroke-width="0.67"/>
+        <line x1="0" y1="1" x2="0" y2="-1" stroke-width="0.72"/>
+      </g>
 
-  <!-- CHERRY BLOSSOM right (625,34) -->
-  <g transform="translate(625,34)">
-    <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75"/>
-    <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75" transform="rotate(72)"/>
-    <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75" transform="rotate(144)"/>
-    <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75" transform="rotate(216)"/>
-    <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75" transform="rotate(288)"/>
-    <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35"/>
-    <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35" transform="rotate(72)"/>
-    <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35" transform="rotate(144)"/>
-    <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35" transform="rotate(216)"/>
-    <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35" transform="rotate(288)"/>
-    <circle r="3" stroke-width="0.7"/>
-    <circle r="1.2" fill="#111" stroke="none"/>
-  </g>
+      <!-- CHERRY BLOSSOM right (625,34) -->
+      <g transform="translate(625,34)">
+        <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75"/>
+        <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75" transform="rotate(72)"/>
+        <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75" transform="rotate(144)"/>
+        <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75" transform="rotate(216)"/>
+        <ellipse cy="-8" rx="4.8" ry="5.8" stroke-width="0.75" transform="rotate(288)"/>
+        <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35"/>
+        <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35" transform="rotate(72)"/>
+        <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35" transform="rotate(144)"/>
+        <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35" transform="rotate(216)"/>
+        <line x1="0" y1="-13.5" x2="0" y2="-11.5" stroke-width="0.35" transform="rotate(288)"/>
+        <circle r="3" stroke-width="0.7"/>
+        <circle r="1.2" fill="#111" stroke="none"/>
+      </g>
 
-  <!-- 4-PETAL WILDFLOWER on right branch at tip (713,38) -->
-  <g transform="translate(713,38)">
-    <ellipse cy="-5.5" rx="2.8" ry="4.2" stroke-width="0.68"/>
-    <ellipse cy="-5.5" rx="2.8" ry="4.2" stroke-width="0.68" transform="rotate(90)"/>
-    <ellipse cy="-5.5" rx="2.8" ry="4.2" stroke-width="0.68" transform="rotate(180)"/>
-    <ellipse cy="-5.5" rx="2.8" ry="4.2" stroke-width="0.68" transform="rotate(270)"/>
-    <circle r="2" stroke-width="0.65"/>
-    <circle r="0.85" fill="#111" stroke="none"/>
-  </g>
+      <!-- 4-PETAL WILDFLOWER on right branch at tip (713,38) -->
+      <g transform="translate(713,38)">
+        <ellipse cy="-5.5" rx="2.8" ry="4.2" stroke-width="0.68"/>
+        <ellipse cy="-5.5" rx="2.8" ry="4.2" stroke-width="0.68" transform="rotate(90)"/>
+        <ellipse cy="-5.5" rx="2.8" ry="4.2" stroke-width="0.68" transform="rotate(180)"/>
+        <ellipse cy="-5.5" rx="2.8" ry="4.2" stroke-width="0.68" transform="rotate(270)"/>
+        <circle r="2" stroke-width="0.65"/>
+        <circle r="0.85" fill="#111" stroke="none"/>
+      </g>
 
-  <!-- ROSE BUD far right -->
-  <g transform="translate(767,43)">
-    <path d="M0,-3 Q-3.5,-8 0,-13 Q3.5,-8 0,-3" stroke-width="0.72"/>
-    <path d="M0,-7 Q-5.5,-10 0,-16 Q5.5,-10 0,-7" stroke-width="0.62"/>
-    <line x1="0" y1="0" x2="0" y2="-3" stroke-width="0.72"/>
-  </g>
+      <!-- ROSE BUD far right -->
+      <g transform="translate(767,43)">
+        <path d="M0,-3 Q-3.5,-8 0,-13 Q3.5,-8 0,-3" stroke-width="0.72"/>
+        <path d="M0,-7 Q-5.5,-10 0,-16 Q5.5,-10 0,-7" stroke-width="0.62"/>
+        <line x1="0" y1="0" x2="0" y2="-3" stroke-width="0.72"/>
+      </g>
 
-  <!-- LEAVES — left section (generous distribution) -->
-  <g transform="translate(62,16) rotate(-22)">
-    <path d="M0,0 Q7,-10 0,-18 Q-7,-10 0,0" stroke-width="0.68"/>
-    <line x1="0" y1="-1" x2="0" y2="-17" stroke-width="0.36"/>
-  </g>
-  <g transform="translate(78,44) rotate(18)">
-    <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
-  </g>
-  <g transform="translate(122,19) rotate(-14)">
-    <path d="M0,0 Q8,-12 0,-22 Q-8,-12 0,0" stroke-width="0.7"/>
-    <line x1="0" y1="-1" x2="0" y2="-21" stroke-width="0.38"/>
-  </g>
-  <g transform="translate(140,43) rotate(22)">
-    <path d="M0,0 Q6,-9 0,-16 Q-6,-9 0,0" stroke-width="0.64"/>
-    <line x1="0" y1="-1" x2="0" y2="-15" stroke-width="0.34"/>
-  </g>
-  <g transform="translate(205,14) rotate(-18)">
-    <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
-  </g>
-  <g transform="translate(220,40) rotate(14)">
-    <path d="M0,0 Q7,-10 0,-18 Q-7,-10 0,0" stroke-width="0.66"/>
-    <line x1="0" y1="-1" x2="0" y2="-17" stroke-width="0.35"/>
-  </g>
-  <g transform="translate(240,16) rotate(-10)">
-    <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
-  </g>
-  <g transform="translate(258,38) rotate(10)">
-    <path d="M0,0 Q5,-7 0,-13 Q-5,-7 0,0" stroke-width="0.6"/>
-  </g>
-  <g transform="translate(308,18) rotate(-9)">
-    <path d="M0,0 Q8,-11 0,-20 Q-8,-11 0,0" stroke-width="0.67"/>
-    <line x1="0" y1="-1" x2="0" y2="-19" stroke-width="0.36"/>
-  </g>
-  <g transform="translate(328,40) rotate(12)">
-    <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
-  </g>
-  <g transform="translate(352,22) rotate(-12)">
-    <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
-  </g>
-  <g transform="translate(375,38) rotate(8)">
-    <path d="M0,0 Q5,-7 0,-13 Q-5,-7 0,0" stroke-width="0.6"/>
-  </g>
+      <!-- LEAVES — left section (generous distribution) -->
+      <g transform="translate(62,16) rotate(-22)">
+        <path d="M0,0 Q7,-10 0,-18 Q-7,-10 0,0" stroke-width="0.68"/>
+        <line x1="0" y1="-1" x2="0" y2="-17" stroke-width="0.36"/>
+      </g>
+      <g transform="translate(78,44) rotate(18)">
+        <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
+      </g>
+      <g transform="translate(122,19) rotate(-14)">
+        <path d="M0,0 Q8,-12 0,-22 Q-8,-12 0,0" stroke-width="0.7"/>
+        <line x1="0" y1="-1" x2="0" y2="-21" stroke-width="0.38"/>
+      </g>
+      <g transform="translate(140,43) rotate(22)">
+        <path d="M0,0 Q6,-9 0,-16 Q-6,-9 0,0" stroke-width="0.64"/>
+        <line x1="0" y1="-1" x2="0" y2="-15" stroke-width="0.34"/>
+      </g>
+      <g transform="translate(205,14) rotate(-18)">
+        <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
+      </g>
+      <g transform="translate(220,40) rotate(14)">
+        <path d="M0,0 Q7,-10 0,-18 Q-7,-10 0,0" stroke-width="0.66"/>
+        <line x1="0" y1="-1" x2="0" y2="-17" stroke-width="0.35"/>
+      </g>
+      <g transform="translate(240,16) rotate(-10)">
+        <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
+      </g>
+      <g transform="translate(258,38) rotate(10)">
+        <path d="M0,0 Q5,-7 0,-13 Q-5,-7 0,0" stroke-width="0.6"/>
+      </g>
+      <g transform="translate(308,18) rotate(-9)">
+        <path d="M0,0 Q8,-11 0,-20 Q-8,-11 0,0" stroke-width="0.67"/>
+        <line x1="0" y1="-1" x2="0" y2="-19" stroke-width="0.36"/>
+      </g>
+      <g transform="translate(328,40) rotate(12)">
+        <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
+      </g>
+      <g transform="translate(352,22) rotate(-12)">
+        <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
+      </g>
+      <g transform="translate(375,38) rotate(8)">
+        <path d="M0,0 Q5,-7 0,-13 Q-5,-7 0,0" stroke-width="0.6"/>
+      </g>
 
-  <!-- LEAVES — right section (mirror of left) -->
-  <g transform="translate(738,16) rotate(22)">
-    <path d="M0,0 Q7,-10 0,-18 Q-7,-10 0,0" stroke-width="0.68"/>
-    <line x1="0" y1="-1" x2="0" y2="-17" stroke-width="0.36"/>
-  </g>
-  <g transform="translate(722,44) rotate(-18)">
-    <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
-  </g>
-  <g transform="translate(678,19) rotate(14)">
-    <path d="M0,0 Q8,-12 0,-22 Q-8,-12 0,0" stroke-width="0.7"/>
-    <line x1="0" y1="-1" x2="0" y2="-21" stroke-width="0.38"/>
-  </g>
-  <g transform="translate(660,43) rotate(-22)">
-    <path d="M0,0 Q6,-9 0,-16 Q-6,-9 0,0" stroke-width="0.64"/>
-    <line x1="0" y1="-1" x2="0" y2="-15" stroke-width="0.34"/>
-  </g>
-  <g transform="translate(595,14) rotate(18)">
-    <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
-  </g>
-  <g transform="translate(580,40) rotate(-14)">
-    <path d="M0,0 Q7,-10 0,-18 Q-7,-10 0,0" stroke-width="0.66"/>
-    <line x1="0" y1="-1" x2="0" y2="-17" stroke-width="0.35"/>
-  </g>
-  <g transform="translate(560,16) rotate(10)">
-    <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
-  </g>
-  <g transform="translate(542,38) rotate(-10)">
-    <path d="M0,0 Q5,-7 0,-13 Q-5,-7 0,0" stroke-width="0.6"/>
-  </g>
-  <g transform="translate(492,18) rotate(9)">
-    <path d="M0,0 Q8,-11 0,-20 Q-8,-11 0,0" stroke-width="0.67"/>
-    <line x1="0" y1="-1" x2="0" y2="-19" stroke-width="0.36"/>
-  </g>
-  <g transform="translate(472,40) rotate(-12)">
-    <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
-  </g>
-  <g transform="translate(448,22) rotate(12)">
-    <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
-  </g>
-  <g transform="translate(425,38) rotate(-8)">
-    <path d="M0,0 Q5,-7 0,-13 Q-5,-7 0,0" stroke-width="0.6"/>
-  </g>
+      <!-- LEAVES — right section (mirror of left) -->
+      <g transform="translate(738,16) rotate(22)">
+        <path d="M0,0 Q7,-10 0,-18 Q-7,-10 0,0" stroke-width="0.68"/>
+        <line x1="0" y1="-1" x2="0" y2="-17" stroke-width="0.36"/>
+      </g>
+      <g transform="translate(722,44) rotate(-18)">
+        <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
+      </g>
+      <g transform="translate(678,19) rotate(14)">
+        <path d="M0,0 Q8,-12 0,-22 Q-8,-12 0,0" stroke-width="0.7"/>
+        <line x1="0" y1="-1" x2="0" y2="-21" stroke-width="0.38"/>
+      </g>
+      <g transform="translate(660,43) rotate(-22)">
+        <path d="M0,0 Q6,-9 0,-16 Q-6,-9 0,0" stroke-width="0.64"/>
+        <line x1="0" y1="-1" x2="0" y2="-15" stroke-width="0.34"/>
+      </g>
+      <g transform="translate(595,14) rotate(18)">
+        <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
+      </g>
+      <g transform="translate(580,40) rotate(-14)">
+        <path d="M0,0 Q7,-10 0,-18 Q-7,-10 0,0" stroke-width="0.66"/>
+        <line x1="0" y1="-1" x2="0" y2="-17" stroke-width="0.35"/>
+      </g>
+      <g transform="translate(560,16) rotate(10)">
+        <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
+      </g>
+      <g transform="translate(542,38) rotate(-10)">
+        <path d="M0,0 Q5,-7 0,-13 Q-5,-7 0,0" stroke-width="0.6"/>
+      </g>
+      <g transform="translate(492,18) rotate(9)">
+        <path d="M0,0 Q8,-11 0,-20 Q-8,-11 0,0" stroke-width="0.67"/>
+        <line x1="0" y1="-1" x2="0" y2="-19" stroke-width="0.36"/>
+      </g>
+      <g transform="translate(472,40) rotate(-12)">
+        <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
+      </g>
+      <g transform="translate(448,22) rotate(12)">
+        <path d="M0,0 Q5,-8 0,-14 Q-5,-8 0,0" stroke-width="0.62"/>
+      </g>
+      <g transform="translate(425,38) rotate(-8)">
+        <path d="M0,0 Q5,-7 0,-13 Q-5,-7 0,0" stroke-width="0.6"/>
+      </g>
+    </g>
+  </defs>
+  <use href="#half"/>
+  <use href="#half" transform="translate(800,0)"/>
 </svg>
