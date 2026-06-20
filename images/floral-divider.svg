@@ -1,455 +1,488 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 110" preserveAspectRatio="xMidYMid meet" width="100%" height="auto" fill="none" stroke="#777" stroke-linecap="round" stroke-linejoin="round">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 130" preserveAspectRatio="xMidYMid meet" width="100%" height="auto" fill="none" stroke="#6d6d6d" stroke-linecap="round" stroke-linejoin="round">
 
-  <!-- ═══════════════════════════════════════════════════════════
-       MAIN VINE — organic, non-repeating path, no symmetry
-       vine y ranges from ~38 to ~78 across the 1200-unit width
-       ═══════════════════════════════════════════════════════════ -->
-  <path d="M0,58 C22,44 46,70 82,54 C106,42 122,46 150,66 C170,80 192,76 222,60
-           C245,46 265,42 295,58 C318,70 338,76 368,60 C392,46 412,42 442,62
-           C462,76 486,80 518,64 C540,50 562,42 596,56 C618,68 640,72 670,56
-           C692,42 716,36 748,54 C772,66 796,74 828,58 C852,44 874,38 908,56
-           C930,70 954,76 984,60 C1006,46 1030,40 1062,56
-           C1084,68 1108,72 1136,58 C1158,46 1180,48 1200,60" stroke-width="0.88"/>
+<!-- MAIN VINE: starts low-left (y=70), rises dramatically, two deep
+     valleys at y=86 (x=332 and x=526), major peak at y=26 (x=450).
+     y-range = 60 units (vs old 20-unit sine wave). Computed y values
+     verified with Python cubic-bezier math. -->
+<path d="M0,70 C18,62 35,46 62,34
+         C78,26 95,22 115,26
+         C134,30 144,40 158,44
+         C174,48 188,46 204,38
+         C220,30 234,26 252,28
+         C268,30 280,45 294,62
+         C308,76 318,83 332,86
+         C346,86 358,80 370,69
+         C382,58 390,45 404,33
+         C416,24 432,22 450,26
+         C468,32 478,46 490,60
+         C502,74 512,83 526,86
+         C540,86 554,80 568,70
+         C582,60 590,48 606,40
+         C622,32 640,28 658,36
+         C676,44 688,54 702,59
+         C716,64 730,58 744,51
+         C758,44 770,38 785,38
+         C800,38 814,46 827,56
+         C840,66 849,73 864,74
+         C879,74 892,66 906,56
+         C920,46 930,40 946,36
+         C962,32 978,34 992,44
+         C1006,54 1016,63 1029,65
+         C1042,67 1056,61 1070,55
+         C1084,49 1100,45 1118,47
+         C1136,49 1150,55 1165,59
+         C1176,62 1188,62 1200,62"
+      stroke-width="0.95"/>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       BRANCH STEMS — connect vine to flowers and leaf clusters
-       ═══════════════════════════════════════════════════════════ -->
-  <!-- Branch to cherry blossom 1 above at (82,54) → (80,34) -->
-  <path d="M82,54 C80,46 81,40 80,34" stroke-width="0.7"/>
-  <!-- Branch to Rose 1 above at (222,60) → (222,42) -->
-  <path d="M222,60 C224,52 222,48 222,42" stroke-width="0.7"/>
-  <!-- Branch to cherry blossom 2 below at (442,62) → (446,82) -->
-  <path d="M442,62 C444,70 445,76 446,82" stroke-width="0.7"/>
-  <!-- Branch to Rose 2 below at (670,56) → (672,76) -->
-  <path d="M670,56 C672,62 673,70 672,76" stroke-width="0.7"/>
-  <!-- Branch to cherry blossom 3 above at (748,54) → (746,34) -->
-  <path d="M748,54 C746,46 747,40 746,34" stroke-width="0.7"/>
-  <!-- Branch to cherry blossom 4 below at (984,60) → (986,80) -->
-  <path d="M984,60 C986,68 986,74 986,80" stroke-width="0.7"/>
-  <!-- Branch to Rose 3 above at (1062,56) → (1060,36) -->
-  <path d="M1062,56 C1060,48 1061,42 1060,36" stroke-width="0.7"/>
-  <!-- Small branch to bud at (295,58) -->
-  <path d="M295,58 C298,52 300,46 302,41" stroke-width="0.6"/>
-  <!-- Small branch to bud at (828,58) -->
-  <path d="M828,58 C832,52 834,46 836,41" stroke-width="0.6"/>
-  <!-- Small branch to bud at (1136,58) -->
-  <path d="M1136,58 C1140,52 1142,48 1143,43" stroke-width="0.6"/>
+<!-- Secondary vine strand: branches off main vine at (278,46),
+     arches above the deep valley, re-merges near (374,58) -->
+<path d="M278,46 C292,40 308,37 326,36 C342,35 358,40 374,58"
+      stroke-width="0.62"/>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       VINE TENDRILS — fine spiral curls at organic intervals
-       ═══════════════════════════════════════════════════════════ -->
-  <!-- Tendril near x=150 (vine at y≈66) -->
-  <path d="M152,64 C157,56 165,52 168,57 C170,62 166,68 160,65 C156,62 157,57 161,56" stroke-width="0.44"/>
-  <!-- Tendril near x=518 (vine at y≈64) -->
-  <path d="M520,62 C525,54 533,50 536,55 C538,60 534,66 528,63 C524,60 525,55 529,54" stroke-width="0.44"/>
-  <!-- Tendril near x=908 (vine at y≈56) -->
-  <path d="M910,54 C915,46 923,42 926,47 C928,52 924,58 918,55 C914,52 915,47 919,46" stroke-width="0.44"/>
-  <!-- Small side curl at vine point x=596 -->
-  <path d="M598,54 C603,62 608,64 607,60 C605,55 600,55 599,59" stroke-width="0.4"/>
+<!-- BRANCH STEMS to all flowers -->
+<path d="M115,26  C114,22 114,18 113,14"   stroke-width="0.68"/>
+<path d="M404,33  C403,27 404,24 404,22"   stroke-width="0.72"/>
+<path d="M332,86  C332,91 333,97 334,104"  stroke-width="0.68"/>
+<path d="M450,26  C450,21 450,17 450,14"   stroke-width="0.68"/>
+<path d="M526,86  C526,92 526,98 526,104"  stroke-width="0.72"/>
+<path d="M658,36  C657,30 657,25 656,22"   stroke-width="0.68"/>
+<path d="M785,38  C784,31 784,26 784,22"   stroke-width="0.68"/>
+<path d="M570,70  C572,63 574,57 576,52"   stroke-width="0.62"/>
+<path d="M946,36  C945,29 945,25 944,22"   stroke-width="0.72"/>
+<path d="M1029,65 C1029,71 1029,77 1028,82" stroke-width="0.68"/>
+<path d="M1070,55 C1072,49 1073,44 1074,40" stroke-width="0.62"/>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       CHERRY BLOSSOM 1 — above vine, x≈80, centred at (80,34)
-       ═══════════════════════════════════════════════════════════ -->
-  <g transform="translate(80,34)">
-    <ellipse cy="-10" rx="5" ry="7.5" stroke-width="0.72"/>
-    <ellipse cy="-10" rx="5" ry="7.5" stroke-width="0.72" transform="rotate(72)"/>
-    <ellipse cy="-10" rx="5" ry="7.5" stroke-width="0.72" transform="rotate(144)"/>
-    <ellipse cy="-10" rx="5" ry="7.5" stroke-width="0.72" transform="rotate(216)"/>
-    <ellipse cy="-10" rx="5" ry="7.5" stroke-width="0.72" transform="rotate(288)"/>
-    <!-- Stamens -->
-    <line x1="0" y1="0" x2="0" y2="-14" stroke-width="0.35"/>
-    <line x1="0" y1="0" x2="5.2" y2="-12.8" stroke-width="0.35"/>
-    <line x1="0" y1="0" x2="9" y2="-8" stroke-width="0.35"/>
-    <line x1="0" y1="0" x2="-5.2" y2="-12.8" stroke-width="0.35"/>
-    <line x1="0" y1="0" x2="-9" y2="-8" stroke-width="0.35"/>
-    <circle r="0.9" cy="-14" fill="#777" stroke="none"/>
-    <circle r="0.9" cx="5.2" cy="-12.8" fill="#777" stroke="none"/>
-    <circle r="0.9" cx="9" cy="-8" fill="#777" stroke="none"/>
-    <circle r="0.9" cx="-5.2" cy="-12.8" fill="#777" stroke="none"/>
-    <circle r="0.9" cx="-9" cy="-8" fill="#777" stroke="none"/>
-    <circle r="2.5" stroke-width="0.65"/>
-    <circle r="1" fill="#777" stroke="none"/>
-  </g>
+<!-- VINE TENDRILS — spiral curls at irregular intervals -->
+<path d="M45,40  C50,32 58,29 62,34  C65,39 61,46 55,42 C50,39 51,32 55,31"   stroke-width="0.44"/>
+<path d="M230,31 C235,24 243,21 247,27 C250,32 246,39 240,35 C235,32 236,25 240,24" stroke-width="0.44"/>
+<path d="M488,62 C492,71 498,75 500,70 C502,65 498,60 494,63 C491,66 492,71 495,71" stroke-width="0.44"/>
+<path d="M904,57 C909,50 917,47 920,52 C922,57 918,63 912,60 C907,57 908,50 912,49" stroke-width="0.44"/>
+<path d="M1150,56 C1155,50 1161,48 1163,53 C1165,57 1162,62 1157,59 C1153,56 1154,50 1157,50" stroke-width="0.42"/>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       ROSE 1 — above vine, centred at (222, 42)
-       ═══════════════════════════════════════════════════════════ -->
-  <!-- Leaves on rose stem -->
-  <g transform="translate(218,52) rotate(-28)">
-    <path d="M0,0 C4,-3 7,-9 5,-15 C3,-19 -3,-19 -5,-15 C-7,-9 -4,-3 0,0" stroke-width="0.62"/>
-    <line x1="0" y1="-1" x2="0" y2="-13" stroke-width="0.3"/>
-    <path d="M0,-5 Q3,-9 5,-12" stroke-width="0.26"/>
-    <path d="M0,-5 Q-3,-9 -5,-12" stroke-width="0.26"/>
-  </g>
-  <g transform="translate(226,52) rotate(25)">
-    <path d="M0,0 C3,-2 5,-7 4,-12 C2,-15 -2,-15 -4,-12 C-5,-7 -3,-2 0,0" stroke-width="0.58"/>
-  </g>
-  <g transform="translate(222,42)">
-    <!-- 5 outer petals -->
-    <ellipse cy="-13" rx="5.5" ry="8.5" stroke-width="0.74"/>
-    <ellipse cy="-13" rx="5.5" ry="8.5" stroke-width="0.74" transform="rotate(72)"/>
-    <ellipse cy="-13" rx="5.5" ry="8.5" stroke-width="0.74" transform="rotate(144)"/>
-    <ellipse cy="-13" rx="5.5" ry="8.5" stroke-width="0.74" transform="rotate(216)"/>
-    <ellipse cy="-13" rx="5.5" ry="8.5" stroke-width="0.74" transform="rotate(288)"/>
-    <!-- 5 inner petals offset 36° -->
-    <ellipse cy="-9" rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(36)"/>
-    <ellipse cy="-9" rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(108)"/>
-    <ellipse cy="-9" rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(180)"/>
-    <ellipse cy="-9" rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(252)"/>
-    <ellipse cy="-9" rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(324)"/>
-    <circle r="3.8" stroke-width="0.7"/>
-    <circle r="1.6" fill="#777" stroke="none"/>
-  </g>
+<!-- ═══ CHERRY BLOSSOM 1 — above vine at (113,14) ═══ -->
+<g transform="translate(113,14)">
+  <ellipse cy="-7" rx="4.8" ry="6.5" stroke-width="0.7"/>
+  <ellipse cy="-7" rx="4.5" ry="6.8" stroke-width="0.7" transform="rotate(73)"/>
+  <ellipse cy="-7" rx="5"   ry="6.5" stroke-width="0.7" transform="rotate(145)"/>
+  <ellipse cy="-7" rx="4.8" ry="6.2" stroke-width="0.7" transform="rotate(218)"/>
+  <ellipse cy="-7" rx="4.5" ry="6.8" stroke-width="0.7" transform="rotate(290)"/>
+  <line x1="0" y1="0" x2="0"    y2="-10"  stroke-width="0.32"/>
+  <line x1="0" y1="0" x2="5.3"  y2="-7.3" stroke-width="0.32"/>
+  <line x1="0" y1="0" x2="8.6"  y2="2.8"  stroke-width="0.32"/>
+  <line x1="0" y1="0" x2="-8.6" y2="2.8"  stroke-width="0.32"/>
+  <line x1="0" y1="0" x2="-5.3" y2="-7.3" stroke-width="0.32"/>
+  <circle r="0.8" cy="-10"            fill="#6d6d6d" stroke="none"/>
+  <circle r="0.8" cx="5.3"  cy="-7.3" fill="#6d6d6d" stroke="none"/>
+  <circle r="0.8" cx="8.6"  cy="2.8"  fill="#6d6d6d" stroke="none"/>
+  <circle r="0.8" cx="-8.6" cy="2.8"  fill="#6d6d6d" stroke="none"/>
+  <circle r="0.8" cx="-5.3" cy="-7.3" fill="#6d6d6d" stroke="none"/>
+  <circle r="2.2" stroke-width="0.65"/>
+  <circle r="0.9" fill="#6d6d6d" stroke="none"/>
+</g>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       SMALL ROSEBUD 1 — at branch tip (302,41)
-       ═══════════════════════════════════════════════════════════ -->
-  <g transform="translate(302,41)">
-    <path d="M0,-2 Q-3,-7 0,-12 Q3,-7 0,-2" stroke-width="0.68"/>
-    <path d="M0,-5 Q-5,-8 0,-15 Q5,-8 0,-5" stroke-width="0.58"/>
-    <line x1="0" y1="0" x2="0" y2="-2" stroke-width="0.68"/>
-  </g>
+<!-- ═══ ROSE 1 — above vine, centre (404,22), slightly irregular petals ═══ -->
+<g transform="translate(397,28) rotate(-32)">
+  <path d="M0,0 C4,-2 6,-9 5,-16 C3,-21 -3,-21 -5,-16 C-6,-9 -4,-2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="-1" x2="0" y2="-14" stroke-width="0.28"/>
+  <path d="M0,-5 Q3,-8 5,-12"   stroke-width="0.24"/>
+  <path d="M0,-5 Q-3,-8 -5,-12" stroke-width="0.24"/>
+</g>
+<g transform="translate(410,28) rotate(20)">
+  <path d="M0,0 C5,-2 9,-7 8,-14 C6,-19 -2,-20 -5,-15 C-7,-10 -4,-3 0,0" stroke-width="0.6"/>
+</g>
+<g transform="translate(404,22)">
+  <ellipse cy="-11" rx="5.5" ry="8"   stroke-width="0.72"/>
+  <ellipse cy="-11" rx="5"   ry="8.5" stroke-width="0.72" transform="rotate(74)"/>
+  <ellipse cy="-11" rx="5.5" ry="8"   stroke-width="0.72" transform="rotate(147)"/>
+  <ellipse cy="-11" rx="5"   ry="8.5" stroke-width="0.72" transform="rotate(219)"/>
+  <ellipse cy="-11" rx="6"   ry="7.5" stroke-width="0.72" transform="rotate(292)"/>
+  <ellipse cy="-8"  rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(36)"/>
+  <ellipse cy="-8"  rx="3"   ry="5.8" stroke-width="0.62" transform="rotate(109)"/>
+  <ellipse cy="-8"  rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(181)"/>
+  <ellipse cy="-8"  rx="3"   ry="5.8" stroke-width="0.62" transform="rotate(254)"/>
+  <ellipse cy="-8"  rx="3.5" ry="5.2" stroke-width="0.62" transform="rotate(326)"/>
+  <circle r="3.5" stroke-width="0.68"/>
+  <circle r="1.4" fill="#6d6d6d" stroke="none"/>
+</g>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       CHERRY BLOSSOM 2 — below vine, centred at (446, 82)
-       ═══════════════════════════════════════════════════════════ -->
-  <!-- Leaf on blossom stem -->
-  <g transform="translate(440,72) rotate(-20)">
-    <path d="M0,0 C4,-3 6,-8 4,-13 C3,-16 -3,-16 -4,-13 C-6,-8 -4,-3 0,0" stroke-width="0.58"/>
-    <line x1="0" y1="-1" x2="0" y2="-12" stroke-width="0.28"/>
-  </g>
-  <g transform="translate(446,82)">
-    <ellipse cy="-10" rx="5" ry="7.5" stroke-width="0.72"/>
-    <ellipse cy="-10" rx="5" ry="7.5" stroke-width="0.72" transform="rotate(72)"/>
-    <ellipse cy="-10" rx="5" ry="7.5" stroke-width="0.72" transform="rotate(144)"/>
-    <ellipse cy="-10" rx="5" ry="7.5" stroke-width="0.72" transform="rotate(216)"/>
-    <ellipse cy="-10" rx="5" ry="7.5" stroke-width="0.72" transform="rotate(288)"/>
-    <line x1="0" y1="0" x2="0" y2="-14" stroke-width="0.35"/>
-    <line x1="0" y1="0" x2="5.2" y2="-12.8" stroke-width="0.35"/>
-    <line x1="0" y1="0" x2="-5.2" y2="-12.8" stroke-width="0.35"/>
-    <line x1="0" y1="0" x2="9" y2="-8" stroke-width="0.35"/>
-    <line x1="0" y1="0" x2="-9" y2="-8" stroke-width="0.35"/>
-    <circle r="0.9" cy="-14" fill="#777" stroke="none"/>
-    <circle r="0.9" cx="5.2" cy="-12.8" fill="#777" stroke="none"/>
-    <circle r="0.9" cx="-5.2" cy="-12.8" fill="#777" stroke="none"/>
-    <circle r="0.9" cx="9" cy="-8" fill="#777" stroke="none"/>
-    <circle r="0.9" cx="-9" cy="-8" fill="#777" stroke="none"/>
-    <circle r="2.5" stroke-width="0.65"/>
-    <circle r="1" fill="#777" stroke="none"/>
-  </g>
+<!-- ═══ HANGING CHERRY BLOSSOM — droops below deep valley 1 at (334,104) ═══ -->
+<g transform="translate(326,93) rotate(15)">
+  <path d="M0,0 C3,1 4,5 3,9 C2,12 -2,12 -3,9 C-4,5 -3,1 0,0" stroke-width="0.56"/>
+</g>
+<g transform="translate(334,104)">
+  <ellipse cy="7" rx="4.8" ry="6.5" stroke-width="0.68"/>
+  <ellipse cy="7" rx="4.5" ry="6.8" stroke-width="0.68" transform="rotate(72)"/>
+  <ellipse cy="7" rx="5"   ry="6.5" stroke-width="0.68" transform="rotate(144)"/>
+  <ellipse cy="7" rx="4.8" ry="6.2" stroke-width="0.68" transform="rotate(216)"/>
+  <ellipse cy="7" rx="4.5" ry="6.8" stroke-width="0.68" transform="rotate(288)"/>
+  <circle r="2" stroke-width="0.62"/>
+  <circle r="0.8" fill="#6d6d6d" stroke="none"/>
+</g>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       ROSE 2 — below vine, centred at (672, 76)
-       ═══════════════════════════════════════════════════════════ -->
-  <g transform="translate(666,65) rotate(22)">
-    <path d="M0,0 C3,2 5,7 4,12 C2,15 -2,15 -4,12 C-5,7 -3,2 0,0" stroke-width="0.6"/>
-    <line x1="0" y1="1" x2="0" y2="11" stroke-width="0.28"/>
-    <path d="M0,5 Q3,8 5,10" stroke-width="0.24"/>
-    <path d="M0,5 Q-3,8 -5,10" stroke-width="0.24"/>
-  </g>
-  <g transform="translate(676,66) rotate(-18)">
-    <path d="M0,0 C4,3 6,8 4,13 C3,16 -3,16 -4,13 C-6,8 -4,3 0,0" stroke-width="0.62"/>
-    <line x1="0" y1="1" x2="0" y2="12" stroke-width="0.28"/>
-  </g>
-  <g transform="translate(672,76)">
-    <ellipse cy="-13" rx="5.5" ry="8.5" stroke-width="0.74"/>
-    <ellipse cy="-13" rx="5.5" ry="8.5" stroke-width="0.74" transform="rotate(72)"/>
-    <ellipse cy="-13" rx="5.5" ry="8.5" stroke-width="0.74" transform="rotate(144)"/>
-    <ellipse cy="-13" rx="5.5" ry="8.5" stroke-width="0.74" transform="rotate(216)"/>
-    <ellipse cy="-13" rx="5.5" ry="8.5" stroke-width="0.74" transform="rotate(288)"/>
-    <ellipse cy="-9" rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(36)"/>
-    <ellipse cy="-9" rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(108)"/>
-    <ellipse cy="-9" rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(180)"/>
-    <ellipse cy="-9" rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(252)"/>
-    <ellipse cy="-9" rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(324)"/>
-    <circle r="3.8" stroke-width="0.7"/>
-    <circle r="1.6" fill="#777" stroke="none"/>
-  </g>
+<!-- ═══ CHERRY BLOSSOM 3 — above vine at major peak (450,14) ═══ -->
+<g transform="translate(450,14)">
+  <ellipse cy="-7" rx="4.8" ry="6.5" stroke-width="0.7"/>
+  <ellipse cy="-7" rx="5"   ry="6"   stroke-width="0.7" transform="rotate(72)"/>
+  <ellipse cy="-7" rx="4.5" ry="6.8" stroke-width="0.7" transform="rotate(145)"/>
+  <ellipse cy="-7" rx="4.8" ry="6.3" stroke-width="0.7" transform="rotate(218)"/>
+  <ellipse cy="-7" rx="5"   ry="6.2" stroke-width="0.7" transform="rotate(290)"/>
+  <line x1="0" y1="0" x2="0"    y2="-10"  stroke-width="0.32"/>
+  <line x1="0" y1="0" x2="5.3"  y2="-7.3" stroke-width="0.32"/>
+  <line x1="0" y1="0" x2="8.6"  y2="2.8"  stroke-width="0.32"/>
+  <line x1="0" y1="0" x2="-8.6" y2="2.8"  stroke-width="0.32"/>
+  <line x1="0" y1="0" x2="-5.3" y2="-7.3" stroke-width="0.32"/>
+  <circle r="0.8" cy="-10"            fill="#6d6d6d" stroke="none"/>
+  <circle r="0.8" cx="5.3"  cy="-7.3" fill="#6d6d6d" stroke="none"/>
+  <circle r="0.8" cx="8.6"  cy="2.8"  fill="#6d6d6d" stroke="none"/>
+  <circle r="0.8" cx="-8.6" cy="2.8"  fill="#6d6d6d" stroke="none"/>
+  <circle r="0.8" cx="-5.3" cy="-7.3" fill="#6d6d6d" stroke="none"/>
+  <circle r="2.2" stroke-width="0.65"/>
+  <circle r="0.9" fill="#6d6d6d" stroke="none"/>
+</g>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       CHERRY BLOSSOM 3 — above vine, centred at (746, 34)
-       ═══════════════════════════════════════════════════════════ -->
-  <g transform="translate(742,44) rotate(-15)">
-    <path d="M0,0 C4,-3 6,-8 4,-13 C3,-16 -3,-16 -4,-13 C-6,-8 -4,-3 0,0" stroke-width="0.58"/>
-  </g>
-  <g transform="translate(746,34)">
-    <ellipse cy="-10" rx="4.8" ry="7.2" stroke-width="0.72"/>
-    <ellipse cy="-10" rx="4.8" ry="7.2" stroke-width="0.72" transform="rotate(72)"/>
-    <ellipse cy="-10" rx="4.8" ry="7.2" stroke-width="0.72" transform="rotate(144)"/>
-    <ellipse cy="-10" rx="4.8" ry="7.2" stroke-width="0.72" transform="rotate(216)"/>
-    <ellipse cy="-10" rx="4.8" ry="7.2" stroke-width="0.72" transform="rotate(288)"/>
-    <line x1="0" y1="0" x2="0" y2="-14" stroke-width="0.35"/>
-    <line x1="0" y1="0" x2="5" y2="-12.5" stroke-width="0.35"/>
-    <line x1="0" y1="0" x2="8.6" y2="-7.5" stroke-width="0.35"/>
-    <line x1="0" y1="0" x2="-5" y2="-12.5" stroke-width="0.35"/>
-    <line x1="0" y1="0" x2="-8.6" y2="-7.5" stroke-width="0.35"/>
-    <circle r="0.85" cy="-14" fill="#777" stroke="none"/>
-    <circle r="0.85" cx="5" cy="-12.5" fill="#777" stroke="none"/>
-    <circle r="0.85" cx="8.6" cy="-7.5" fill="#777" stroke="none"/>
-    <circle r="0.85" cx="-5" cy="-12.5" fill="#777" stroke="none"/>
-    <circle r="0.85" cx="-8.6" cy="-7.5" fill="#777" stroke="none"/>
-    <circle r="2.5" stroke-width="0.65"/>
-    <circle r="1" fill="#777" stroke="none"/>
-  </g>
+<!-- ═══ ROSE 2 — hanging below deep valley 2 at (526,104) ═══ -->
+<!-- Detached fallen petal nearby -->
+<ellipse cx="514" cy="100" rx="5" ry="3" transform="rotate(-28,514,100)" stroke-width="0.58"/>
+<g transform="translate(518,93) rotate(-22)">
+  <path d="M0,0 C3,1 4,5 3,9 C2,12 -2,12 -3,9 C-4,5 -3,1 0,0" stroke-width="0.56"/>
+</g>
+<g transform="translate(534,91) rotate(24)">
+  <path d="M0,0 C3,1 4,5 3,9 C2,12 -2,12 -3,9 C-4,5 -3,1 0,0" stroke-width="0.56"/>
+</g>
+<g transform="translate(526,104)">
+  <ellipse cy="-11" rx="5.5" ry="8"   stroke-width="0.72"/>
+  <ellipse cy="-11" rx="5"   ry="8.5" stroke-width="0.72" transform="rotate(74)"/>
+  <ellipse cy="-11" rx="5.5" ry="8"   stroke-width="0.72" transform="rotate(147)"/>
+  <ellipse cy="-11" rx="5.5" ry="8.2" stroke-width="0.72" transform="rotate(220)"/>
+  <ellipse cy="-11" rx="5"   ry="8"   stroke-width="0.72" transform="rotate(292)"/>
+  <ellipse cy="-8"  rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(36)"/>
+  <ellipse cy="-8"  rx="3"   ry="5.8" stroke-width="0.62" transform="rotate(109)"/>
+  <ellipse cy="-8"  rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(181)"/>
+  <ellipse cy="-8"  rx="3"   ry="5.8" stroke-width="0.62" transform="rotate(253)"/>
+  <ellipse cy="-8"  rx="3.5" ry="5.2" stroke-width="0.62" transform="rotate(326)"/>
+  <circle r="3.5" stroke-width="0.68"/>
+  <circle r="1.4" fill="#6d6d6d" stroke="none"/>
+</g>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       CHERRY BLOSSOM 4 — below vine, centred at (986, 80)
-       ═══════════════════════════════════════════════════════════ -->
-  <g transform="translate(980,70) rotate(18)">
-    <path d="M0,0 C3,2 5,7 4,12 C2,15 -2,15 -4,12 C-5,7 -3,2 0,0" stroke-width="0.58"/>
-  </g>
-  <g transform="translate(986,80)">
-    <ellipse cy="-10" rx="5" ry="7.5" stroke-width="0.72"/>
-    <ellipse cy="-10" rx="5" ry="7.5" stroke-width="0.72" transform="rotate(72)"/>
-    <ellipse cy="-10" rx="5" ry="7.5" stroke-width="0.72" transform="rotate(144)"/>
-    <ellipse cy="-10" rx="5" ry="7.5" stroke-width="0.72" transform="rotate(216)"/>
-    <ellipse cy="-10" rx="5" ry="7.5" stroke-width="0.72" transform="rotate(288)"/>
-    <line x1="0" y1="0" x2="0" y2="-14" stroke-width="0.35"/>
-    <line x1="0" y1="0" x2="5.2" y2="-12.8" stroke-width="0.35"/>
-    <line x1="0" y1="0" x2="-5.2" y2="-12.8" stroke-width="0.35"/>
-    <line x1="0" y1="0" x2="9" y2="-8" stroke-width="0.35"/>
-    <line x1="0" y1="0" x2="-9" y2="-8" stroke-width="0.35"/>
-    <circle r="0.9" cy="-14" fill="#777" stroke="none"/>
-    <circle r="0.9" cx="5.2" cy="-12.8" fill="#777" stroke="none"/>
-    <circle r="0.9" cx="-5.2" cy="-12.8" fill="#777" stroke="none"/>
-    <circle r="0.9" cx="9" cy="-8" fill="#777" stroke="none"/>
-    <circle r="0.9" cx="-9" cy="-8" fill="#777" stroke="none"/>
-    <circle r="2.5" stroke-width="0.65"/>
-    <circle r="1" fill="#777" stroke="none"/>
-  </g>
+<!-- ═══ CHERRY BLOSSOM 4 — above vine at (656,22) ═══ -->
+<g transform="translate(649,28) rotate(-20)">
+  <path d="M0,0 C4,-2 6,-9 5,-16 C3,-21 -3,-21 -5,-16 C-6,-9 -4,-2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="-1" x2="0" y2="-14" stroke-width="0.28"/>
+</g>
+<g transform="translate(656,22)">
+  <ellipse cy="-8" rx="5.2" ry="7"   stroke-width="0.72"/>
+  <ellipse cy="-8" rx="5"   ry="7.3" stroke-width="0.72" transform="rotate(73)"/>
+  <ellipse cy="-8" rx="5.3" ry="7"   stroke-width="0.72" transform="rotate(145)"/>
+  <ellipse cy="-8" rx="5"   ry="7.2" stroke-width="0.72" transform="rotate(218)"/>
+  <ellipse cy="-8" rx="5.2" ry="7"   stroke-width="0.72" transform="rotate(290)"/>
+  <line x1="0" y1="0" x2="0"    y2="-11" stroke-width="0.34"/>
+  <line x1="0" y1="0" x2="5.8"  y2="-8"  stroke-width="0.34"/>
+  <line x1="0" y1="0" x2="9.4"  y2="3"   stroke-width="0.34"/>
+  <line x1="0" y1="0" x2="-9.4" y2="3"   stroke-width="0.34"/>
+  <line x1="0" y1="0" x2="-5.8" y2="-8"  stroke-width="0.34"/>
+  <circle r="0.85" cy="-11"            fill="#6d6d6d" stroke="none"/>
+  <circle r="0.85" cx="5.8"  cy="-8"   fill="#6d6d6d" stroke="none"/>
+  <circle r="0.85" cx="9.4"  cy="3"    fill="#6d6d6d" stroke="none"/>
+  <circle r="0.85" cx="-9.4" cy="3"    fill="#6d6d6d" stroke="none"/>
+  <circle r="0.85" cx="-5.8" cy="-8"   fill="#6d6d6d" stroke="none"/>
+  <circle r="2.5" stroke-width="0.68"/>
+  <circle r="1"   fill="#6d6d6d" stroke="none"/>
+</g>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       ROSE 3 — above vine, centred at (1060, 36)
-       ═══════════════════════════════════════════════════════════ -->
-  <g transform="translate(1055,48) rotate(-25)">
-    <path d="M0,0 C4,-3 7,-9 5,-15 C3,-19 -3,-19 -5,-15 C-7,-9 -4,-3 0,0" stroke-width="0.62"/>
-    <line x1="0" y1="-1" x2="0" y2="-13" stroke-width="0.3"/>
-    <path d="M0,-5 Q3,-9 5,-12" stroke-width="0.26"/>
-    <path d="M0,-5 Q-3,-9 -5,-12" stroke-width="0.26"/>
-  </g>
-  <g transform="translate(1065,48) rotate(22)">
-    <path d="M0,0 C3,-2 5,-7 4,-12 C2,-15 -2,-15 -4,-12 C-5,-7 -3,-2 0,0" stroke-width="0.58"/>
-  </g>
-  <g transform="translate(1060,36)">
-    <ellipse cy="-13" rx="5.5" ry="8.5" stroke-width="0.74"/>
-    <ellipse cy="-13" rx="5.5" ry="8.5" stroke-width="0.74" transform="rotate(72)"/>
-    <ellipse cy="-13" rx="5.5" ry="8.5" stroke-width="0.74" transform="rotate(144)"/>
-    <ellipse cy="-13" rx="5.5" ry="8.5" stroke-width="0.74" transform="rotate(216)"/>
-    <ellipse cy="-13" rx="5.5" ry="8.5" stroke-width="0.74" transform="rotate(288)"/>
-    <ellipse cy="-9" rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(36)"/>
-    <ellipse cy="-9" rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(108)"/>
-    <ellipse cy="-9" rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(180)"/>
-    <ellipse cy="-9" rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(252)"/>
-    <ellipse cy="-9" rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(324)"/>
-    <circle r="3.8" stroke-width="0.7"/>
-    <circle r="1.6" fill="#777" stroke="none"/>
-  </g>
+<!-- ═══ CHERRY BLOSSOM 5 — above vine at (784,22) ═══ -->
+<g transform="translate(784,22)">
+  <ellipse cy="-8" rx="5"   ry="7"   stroke-width="0.72"/>
+  <ellipse cy="-8" rx="5.2" ry="7.2" stroke-width="0.72" transform="rotate(72)"/>
+  <ellipse cy="-8" rx="4.8" ry="7"   stroke-width="0.72" transform="rotate(144)"/>
+  <ellipse cy="-8" rx="5.1" ry="7.1" stroke-width="0.72" transform="rotate(217)"/>
+  <ellipse cy="-8" rx="5"   ry="7.3" stroke-width="0.72" transform="rotate(289)"/>
+  <line x1="0" y1="0" x2="0"    y2="-11" stroke-width="0.34"/>
+  <line x1="0" y1="0" x2="5.8"  y2="-8"  stroke-width="0.34"/>
+  <line x1="0" y1="0" x2="9.4"  y2="3"   stroke-width="0.34"/>
+  <line x1="0" y1="0" x2="-9.4" y2="3"   stroke-width="0.34"/>
+  <line x1="0" y1="0" x2="-5.8" y2="-8"  stroke-width="0.34"/>
+  <circle r="0.85" cy="-11"            fill="#6d6d6d" stroke="none"/>
+  <circle r="0.85" cx="5.8"  cy="-8"   fill="#6d6d6d" stroke="none"/>
+  <circle r="0.85" cx="9.4"  cy="3"    fill="#6d6d6d" stroke="none"/>
+  <circle r="0.85" cx="-9.4" cy="3"    fill="#6d6d6d" stroke="none"/>
+  <circle r="0.85" cx="-5.8" cy="-8"   fill="#6d6d6d" stroke="none"/>
+  <circle r="2.5" stroke-width="0.68"/>
+  <circle r="1"   fill="#6d6d6d" stroke="none"/>
+</g>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       SMALL ROSEBUDS on secondary stems
-       ═══════════════════════════════════════════════════════════ -->
-  <g transform="translate(836,41)">
-    <path d="M0,-2 Q-3,-7 0,-12 Q3,-7 0,-2" stroke-width="0.68"/>
-    <path d="M0,-5 Q-5,-9 0,-15 Q5,-9 0,-5" stroke-width="0.58"/>
-    <line x1="0" y1="0" x2="0" y2="-2" stroke-width="0.7"/>
-  </g>
-  <g transform="translate(1143,43)">
-    <path d="M0,-2 Q-3,-6 0,-11 Q3,-6 0,-2" stroke-width="0.65"/>
-    <path d="M0,-4 Q-4,-8 0,-13 Q4,-8 0,-4" stroke-width="0.55"/>
-    <line x1="0" y1="0" x2="0" y2="-2" stroke-width="0.68"/>
-  </g>
+<!-- Small rosebud on side branch at (576,52) -->
+<g transform="translate(576,52)">
+  <path d="M0,-1 Q-3,-6 0,-11 Q3,-6 0,-1"  stroke-width="0.68"/>
+  <path d="M0,-4 Q-5,-8 0,-14 Q5,-8 0,-4"  stroke-width="0.58"/>
+  <path d="M0,0 Q-4,-2 -3,-5" stroke-width="0.42"/>
+  <path d="M0,0 Q4,-2 3,-5"   stroke-width="0.42"/>
+</g>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       LEAVES — all grounded at computed vine y, varying sizes
-       Above-vine leaves: path grows in −y direction
-       Below-vine leaves: path grows in +y direction
-       ═══════════════════════════════════════════════════════════ -->
+<!-- ═══ ROSE 3 — above vine at (944,22) ═══ -->
+<g transform="translate(937,28) rotate(-28)">
+  <path d="M0,0 C4,-2 6,-9 5,-16 C3,-21 -3,-21 -5,-16 C-6,-9 -4,-2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="-1" x2="0" y2="-14" stroke-width="0.28"/>
+  <path d="M0,-5 Q3,-8 5,-12"   stroke-width="0.24"/>
+  <path d="M0,-5 Q-3,-8 -5,-12" stroke-width="0.24"/>
+</g>
+<g transform="translate(952,29) rotate(22)">
+  <path d="M0,0 C5,-2 9,-7 8,-14 C6,-19 -2,-20 -5,-15 C-7,-10 -4,-3 0,0" stroke-width="0.6"/>
+</g>
+<g transform="translate(944,22)">
+  <ellipse cy="-11" rx="5.5" ry="8"   stroke-width="0.72"/>
+  <ellipse cy="-11" rx="5"   ry="8.5" stroke-width="0.72" transform="rotate(74)"/>
+  <ellipse cy="-11" rx="5.5" ry="8"   stroke-width="0.72" transform="rotate(147)"/>
+  <ellipse cy="-11" rx="5"   ry="8.5" stroke-width="0.72" transform="rotate(219)"/>
+  <ellipse cy="-11" rx="6"   ry="7.5" stroke-width="0.72" transform="rotate(292)"/>
+  <ellipse cy="-8"  rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(36)"/>
+  <ellipse cy="-8"  rx="3"   ry="5.8" stroke-width="0.62" transform="rotate(109)"/>
+  <ellipse cy="-8"  rx="3.5" ry="5.5" stroke-width="0.62" transform="rotate(181)"/>
+  <ellipse cy="-8"  rx="3"   ry="5.8" stroke-width="0.62" transform="rotate(253)"/>
+  <ellipse cy="-8"  rx="3.5" ry="5.2" stroke-width="0.62" transform="rotate(326)"/>
+  <circle r="3.5" stroke-width="0.68"/>
+  <circle r="1.4" fill="#6d6d6d" stroke="none"/>
+</g>
 
-  <!-- Left section (x 0–400) -->
+<!-- Small rosebud on side branch at (1074,40) -->
+<g transform="translate(1074,40)">
+  <path d="M0,-1 Q-3,-6 0,-11 Q3,-6 0,-1"  stroke-width="0.68"/>
+  <path d="M0,-4 Q-5,-8 0,-14 Q5,-8 0,-4"  stroke-width="0.58"/>
+  <path d="M0,0 Q-4,-2 -3,-5" stroke-width="0.42"/>
+  <path d="M0,0 Q4,-2 3,-5"   stroke-width="0.42"/>
+</g>
 
-  <!-- x=40 above, vine y≈52 -->
-  <g transform="translate(40,52) rotate(-32)">
-    <path d="M0,0 C4,-3 7,-9 5,-15 C3,-19 -3,-19 -5,-15 C-7,-9 -4,-3 0,0" stroke-width="0.62"/>
-    <line x1="0" y1="-1" x2="0" y2="-13" stroke-width="0.3"/>
-    <path d="M0,-5 Q3,-8 5,-11" stroke-width="0.25"/>
-    <path d="M0,-5 Q-3,-8 -5,-11" stroke-width="0.25"/>
-  </g>
-  <!-- x=62 below, vine y≈52 -->
-  <g transform="translate(62,52) rotate(22)">
-    <path d="M0,0 C3,2 5,7 4,12 C2,15 -2,15 -4,12 C-5,7 -3,2 0,0" stroke-width="0.6"/>
-    <line x1="0" y1="1" x2="0" y2="11" stroke-width="0.28"/>
-  </g>
-  <!-- x=110 above, vine y≈58 -->
-  <g transform="translate(110,58) rotate(-18)">
-    <path d="M0,0 C5,-3 9,-11 6,-19 C4,-24 -4,-24 -6,-19 C-9,-11 -5,-3 0,0" stroke-width="0.65"/>
-    <line x1="0" y1="-1" x2="0" y2="-17" stroke-width="0.32"/>
-    <path d="M0,-6 Q4,-11 6,-14" stroke-width="0.26"/>
-    <path d="M0,-6 Q-4,-11 -6,-14" stroke-width="0.26"/>
-    <path d="M0,-12 Q3,-14 4,-17" stroke-width="0.24"/>
-    <path d="M0,-12 Q-3,-14 -4,-17" stroke-width="0.24"/>
-  </g>
-  <!-- x=148 below, vine y≈66 -->
-  <g transform="translate(148,66) rotate(20)">
-    <path d="M0,0 C3,2 5,7 4,12 C2,15 -2,15 -4,12 C-5,7 -3,2 0,0" stroke-width="0.58"/>
-  </g>
-  <!-- x=180 above, vine y≈72 -->
-  <g transform="translate(180,72) rotate(-30)">
-    <path d="M0,0 C4,-3 7,-9 5,-15 C3,-19 -3,-19 -5,-15 C-7,-9 -4,-3 0,0" stroke-width="0.62"/>
-    <line x1="0" y1="-1" x2="0" y2="-13" stroke-width="0.28"/>
-    <path d="M0,-5 Q3,-9 5,-12" stroke-width="0.24"/>
-    <path d="M0,-5 Q-3,-9 -5,-12" stroke-width="0.24"/>
-  </g>
-  <!-- x=198 above, vine y≈68 -->
-  <g transform="translate(198,68) rotate(-14)">
-    <path d="M0,0 C3,-2 5,-7 4,-12 C2,-15 -2,-15 -4,-12 C-5,-7 -3,-2 0,0" stroke-width="0.58"/>
-  </g>
-  <!-- x=258 above, vine y≈52 (large leaf near Rose 1) -->
-  <g transform="translate(258,52) rotate(-20)">
-    <path d="M0,0 C5,-3 9,-11 6,-19 C4,-24 -4,-24 -6,-19 C-9,-11 -5,-3 0,0" stroke-width="0.65"/>
-    <line x1="0" y1="-1" x2="0" y2="-17" stroke-width="0.32"/>
-    <path d="M0,-6 Q4,-11 6,-14" stroke-width="0.26"/>
-    <path d="M0,-6 Q-4,-11 -6,-14" stroke-width="0.26"/>
-    <path d="M0,-12 Q3,-14 4,-16" stroke-width="0.22"/>
-    <path d="M0,-12 Q-3,-14 -4,-16" stroke-width="0.22"/>
-  </g>
-  <!-- x=272 below, vine y≈50 -->
-  <g transform="translate(272,50) rotate(18)">
-    <path d="M0,0 C4,3 6,8 4,13 C3,16 -3,16 -4,13 C-6,8 -4,3 0,0" stroke-width="0.6"/>
-    <line x1="0" y1="1" x2="0" y2="12" stroke-width="0.28"/>
-    <path d="M0,5 Q3,8 4,11" stroke-width="0.24"/>
-    <path d="M0,5 Q-3,8 -4,11" stroke-width="0.24"/>
-  </g>
-  <!-- x=340 below, vine y≈72 -->
-  <g transform="translate(340,72) rotate(22)">
-    <path d="M0,0 C3,2 5,7 4,12 C2,15 -2,15 -4,12 C-5,7 -3,2 0,0" stroke-width="0.58"/>
-  </g>
-  <!-- x=358 above, vine y≈64 -->
-  <g transform="translate(358,64) rotate(-25)">
-    <path d="M0,0 C4,-3 7,-9 5,-15 C3,-19 -3,-19 -5,-15 C-7,-9 -4,-3 0,0" stroke-width="0.62"/>
-    <line x1="0" y1="-1" x2="0" y2="-13" stroke-width="0.28"/>
-  </g>
-  <!-- x=385 above, vine y≈56 -->
-  <g transform="translate(385,56) rotate(-12)">
-    <path d="M0,0 C3,-2 5,-7 4,-12 C2,-15 -2,-15 -4,-12 C-5,-7 -3,-2 0,0" stroke-width="0.58"/>
-  </g>
+<!-- ═══ CHERRY BLOSSOM 6 — droops below vine at (1028,82) ═══ -->
+<g transform="translate(1028,82)">
+  <ellipse cy="8" rx="5.2" ry="7"   stroke-width="0.7"/>
+  <ellipse cy="8" rx="5"   ry="7.3" stroke-width="0.7" transform="rotate(72)"/>
+  <ellipse cy="8" rx="5.2" ry="7"   stroke-width="0.7" transform="rotate(144)"/>
+  <ellipse cy="8" rx="5"   ry="7.2" stroke-width="0.7" transform="rotate(216)"/>
+  <ellipse cy="8" rx="5.2" ry="7.1" stroke-width="0.7" transform="rotate(288)"/>
+  <circle r="2.2" stroke-width="0.65"/>
+  <circle r="0.9" fill="#6d6d6d" stroke="none"/>
+</g>
 
-  <!-- Middle section (x 400–800) -->
+<!-- ═══════════════════════════════════════════════════════════════════
+     LEAVES — 4 shape types, rooted at computed vine y
+     A=narrow  B=wide  C=asymmetric  D=small-oval
+     U=above vine (path grows in -y)  Dn=below (grows in +y)
+     ═══════════════════════════════════════════════════════════════════ -->
 
-  <!-- x=412 above, vine y≈46 -->
-  <g transform="translate(412,46) rotate(-22)">
-    <path d="M0,0 C5,-3 9,-11 6,-19 C4,-24 -4,-24 -6,-19 C-9,-11 -5,-3 0,0" stroke-width="0.65"/>
-    <line x1="0" y1="-1" x2="0" y2="-17" stroke-width="0.32"/>
-    <path d="M0,-6 Q4,-11 6,-14" stroke-width="0.26"/>
-    <path d="M0,-6 Q-4,-11 -6,-14" stroke-width="0.26"/>
-  </g>
-  <!-- x=490 below, vine y≈76 -->
-  <g transform="translate(490,76) rotate(18)">
-    <path d="M0,0 C3,2 5,7 4,12 C2,15 -2,15 -4,12 C-5,7 -3,2 0,0" stroke-width="0.58"/>
-  </g>
-  <!-- x=506 below, vine y≈78 -->
-  <g transform="translate(506,78) rotate(28)">
-    <path d="M0,0 C4,3 6,8 4,13 C3,16 -3,16 -4,13 C-6,8 -4,3 0,0" stroke-width="0.6"/>
-    <line x1="0" y1="1" x2="0" y2="12" stroke-width="0.28"/>
-    <path d="M0,5 Q3,8 4,11" stroke-width="0.24"/>
-    <path d="M0,5 Q-3,8 -4,11" stroke-width="0.24"/>
-  </g>
-  <!-- x=556 above, vine y≈48 (large leaf) -->
-  <g transform="translate(556,48) rotate(-15)">
-    <path d="M0,0 C5,-3 9,-11 6,-19 C4,-24 -4,-24 -6,-19 C-9,-11 -5,-3 0,0" stroke-width="0.65"/>
-    <line x1="0" y1="-1" x2="0" y2="-17" stroke-width="0.32"/>
-    <path d="M0,-6 Q4,-11 6,-14" stroke-width="0.26"/>
-    <path d="M0,-6 Q-4,-11 -6,-14" stroke-width="0.26"/>
-    <path d="M0,-12 Q3,-14 4,-16" stroke-width="0.22"/>
-    <path d="M0,-12 Q-3,-14 -4,-16" stroke-width="0.22"/>
-  </g>
-  <!-- x=572 below, vine y≈46 -->
-  <g transform="translate(572,46) rotate(20)">
-    <path d="M0,0 C3,2 5,7 4,12 C2,15 -2,15 -4,12 C-5,7 -3,2 0,0" stroke-width="0.58"/>
-  </g>
-  <!-- x=632 below, vine y≈68 -->
-  <g transform="translate(632,68) rotate(16)">
-    <path d="M0,0 C4,3 6,8 4,13 C3,16 -3,16 -4,13 C-6,8 -4,3 0,0" stroke-width="0.6"/>
-    <line x1="0" y1="1" x2="0" y2="12" stroke-width="0.28"/>
-  </g>
-  <!-- x=650 above, vine y≈60 -->
-  <g transform="translate(650,60) rotate(-18)">
-    <path d="M0,0 C4,-3 7,-9 5,-15 C3,-19 -3,-19 -5,-15 C-7,-9 -4,-3 0,0" stroke-width="0.62"/>
-    <line x1="0" y1="-1" x2="0" y2="-13" stroke-width="0.28"/>
-    <path d="M0,-5 Q3,-9 5,-12" stroke-width="0.24"/>
-    <path d="M0,-5 Q-3,-9 -5,-12" stroke-width="0.24"/>
-  </g>
-  <!-- x=706 above, vine y≈42 -->
-  <g transform="translate(706,42) rotate(-22)">
-    <path d="M0,0 C5,-3 9,-11 6,-19 C4,-24 -4,-24 -6,-19 C-9,-11 -5,-3 0,0" stroke-width="0.65"/>
-    <line x1="0" y1="-1" x2="0" y2="-17" stroke-width="0.32"/>
-    <path d="M0,-6 Q4,-11 6,-14" stroke-width="0.26"/>
-    <path d="M0,-6 Q-4,-11 -6,-14" stroke-width="0.26"/>
-  </g>
-  <!-- x=720 below, vine y≈44 -->
-  <g transform="translate(720,44) rotate(20)">
-    <path d="M0,0 C3,2 5,7 4,12 C2,15 -2,15 -4,12 C-5,7 -3,2 0,0" stroke-width="0.6"/>
-  </g>
-  <!-- x=796 below, vine y≈68 -->
-  <g transform="translate(796,68) rotate(24)">
-    <path d="M0,0 C4,3 6,8 4,13 C3,16 -3,16 -4,13 C-6,8 -4,3 0,0" stroke-width="0.6"/>
-    <line x1="0" y1="1" x2="0" y2="12" stroke-width="0.28"/>
-  </g>
+<!-- LEFT SECTION (0–250) -->
+<g transform="translate(30,49) rotate(-30)">  <!-- B-U -->
+  <path d="M0,0 C6,-2 10,-6 9,-12 C7,-16 -7,-16 -9,-12 C-10,-6 -6,-2 0,0" stroke-width="0.64"/>
+  <line x1="0" y1="-1" x2="0" y2="-11"  stroke-width="0.28"/>
+  <path d="M0,-4 Q4,-7 7,-10"  stroke-width="0.24"/>
+  <path d="M0,-4 Q-4,-7 -7,-10" stroke-width="0.24"/>
+</g>
+<g transform="translate(60,34) rotate(-24)">  <!-- A-U -->
+  <path d="M0,0 C4,-2 6,-9 5,-16 C3,-21 -3,-21 -5,-16 C-6,-9 -4,-2 0,0" stroke-width="0.64"/>
+  <line x1="0" y1="-1" x2="0" y2="-14"   stroke-width="0.28"/>
+  <path d="M0,-5 Q3,-8 5,-12"    stroke-width="0.24"/>
+  <path d="M0,-5 Q-3,-8 -5,-12"  stroke-width="0.24"/>
+  <path d="M0,-10 Q2,-12 3,-14"  stroke-width="0.2"/>
+  <path d="M0,-10 Q-2,-12 -3,-14" stroke-width="0.2"/>
+</g>
+<g transform="translate(78,29) rotate(18)">  <!-- C-Dn -->
+  <path d="M0,0 C5,2 9,7 8,14 C6,19 -2,20 -5,15 C-7,10 -4,3 0,0" stroke-width="0.6"/>
+</g>
+<g transform="translate(130,34) rotate(-16)">  <!-- D-U -->
+  <path d="M0,0 C3,-1 4,-5 3,-9 C2,-12 -2,-12 -3,-9 C-4,-5 -3,-1 0,0" stroke-width="0.54"/>
+</g>
+<g transform="translate(155,44) rotate(-22)">  <!-- A-U -->
+  <path d="M0,0 C4,-2 6,-9 5,-16 C3,-21 -3,-21 -5,-16 C-6,-9 -4,-2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="-1" x2="0" y2="-14"   stroke-width="0.28"/>
+  <path d="M0,-5 Q3,-8 5,-12"    stroke-width="0.24"/>
+  <path d="M0,-5 Q-3,-8 -5,-12"  stroke-width="0.24"/>
+</g>
+<g transform="translate(165,44) rotate(20)">  <!-- D-Dn -->
+  <path d="M0,0 C3,1 4,5 3,9 C2,12 -2,12 -3,9 C-4,5 -3,1 0,0" stroke-width="0.54"/>
+</g>
+<g transform="translate(200,38) rotate(-26)">  <!-- B-U -->
+  <path d="M0,0 C6,-2 10,-6 9,-12 C7,-16 -7,-16 -9,-12 C-10,-6 -6,-2 0,0" stroke-width="0.64"/>
+  <line x1="0" y1="-1" x2="0" y2="-11"  stroke-width="0.28"/>
+  <path d="M0,-4 Q4,-7 7,-10"  stroke-width="0.24"/>
+  <path d="M0,-4 Q-4,-7 -7,-10" stroke-width="0.24"/>
+</g>
+<g transform="translate(218,32) rotate(22)">  <!-- A-Dn -->
+  <path d="M0,0 C4,2 6,9 5,16 C3,21 -3,21 -5,16 C-6,9 -4,2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="1" x2="0" y2="14"   stroke-width="0.26"/>
+  <path d="M0,5 Q3,8 5,12"   stroke-width="0.22"/>
+  <path d="M0,5 Q-3,8 -5,12" stroke-width="0.22"/>
+</g>
+<g transform="translate(248,28) rotate(-14)">  <!-- D-U -->
+  <path d="M0,0 C3,-1 4,-5 3,-9 C2,-12 -2,-12 -3,-9 C-4,-5 -3,-1 0,0" stroke-width="0.54"/>
+</g>
+<!-- Leaves on secondary vine strand -->
+<g transform="translate(308,39) rotate(-24)">  <!-- D-U -->
+  <path d="M0,0 C3,-1 4,-5 3,-9 C2,-12 -2,-12 -3,-9 C-4,-5 -3,-1 0,0" stroke-width="0.54"/>
+</g>
+<g transform="translate(342,36) rotate(-18)">  <!-- D-U -->
+  <path d="M0,0 C3,-1 4,-5 3,-9 C2,-12 -2,-12 -3,-9 C-4,-5 -3,-1 0,0" stroke-width="0.54"/>
+</g>
 
-  <!-- Right section (x 800–1200) -->
+<!-- DENSE CLUSTER / VALLEY AREA (250–580) -->
+<g transform="translate(272,46) rotate(-28)">  <!-- C-U -->
+  <path d="M0,0 C5,-2 9,-7 8,-14 C6,-19 -2,-20 -5,-15 C-7,-10 -4,-3 0,0" stroke-width="0.62"/>
+</g>
+<g transform="translate(308,76) rotate(20)">  <!-- A-Dn, hanging from valley approach -->
+  <path d="M0,0 C4,2 6,9 5,16 C3,21 -3,21 -5,16 C-6,9 -4,2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="1" x2="0" y2="14" stroke-width="0.26"/>
+</g>
+<g transform="translate(322,83) rotate(8)">  <!-- D-Dn -->
+  <path d="M0,0 C3,1 4,5 3,9 C2,12 -2,12 -3,9 C-4,5 -3,1 0,0" stroke-width="0.54"/>
+</g>
+<g transform="translate(343,86) rotate(28)">  <!-- C-Dn -->
+  <path d="M0,0 C5,2 9,7 8,14 C6,19 -2,20 -5,15 C-7,10 -4,3 0,0" stroke-width="0.6"/>
+</g>
+<g transform="translate(357,80) rotate(-30)">  <!-- A-U, rising from valley -->
+  <path d="M0,0 C4,-2 6,-9 5,-16 C3,-21 -3,-21 -5,-16 C-6,-9 -4,-2 0,0" stroke-width="0.64"/>
+  <line x1="0" y1="-1" x2="0" y2="-14" stroke-width="0.28"/>
+</g>
+<g transform="translate(370,69) rotate(-18)">  <!-- B-U -->
+  <path d="M0,0 C6,-2 10,-6 9,-12 C7,-16 -7,-16 -9,-12 C-10,-6 -6,-2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="-1" x2="0" y2="-11" stroke-width="0.26"/>
+  <path d="M0,-4 Q4,-7 7,-10"  stroke-width="0.22"/>
+  <path d="M0,-4 Q-4,-7 -7,-10" stroke-width="0.22"/>
+</g>
+<g transform="translate(384,43) rotate(-14)">  <!-- D-U, near Rose1 -->
+  <path d="M0,0 C3,-1 4,-5 3,-9 C2,-12 -2,-12 -3,-9 C-4,-5 -3,-1 0,0" stroke-width="0.54"/>
+</g>
+<g transform="translate(472,47) rotate(24)">  <!-- B-Dn, between peaks -->
+  <path d="M0,0 C6,2 10,6 9,12 C7,16 -7,16 -9,12 C-10,6 -6,2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="1" x2="0" y2="11" stroke-width="0.26"/>
+</g>
+<g transform="translate(506,81) rotate(18)">  <!-- A-Dn, entering valley 2 -->
+  <path d="M0,0 C4,2 6,9 5,16 C3,21 -3,21 -5,16 C-6,9 -4,2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="1" x2="0" y2="14" stroke-width="0.26"/>
+</g>
+<g transform="translate(540,86) rotate(28)">  <!-- D-Dn -->
+  <path d="M0,0 C3,1 4,5 3,9 C2,12 -2,12 -3,9 C-4,5 -3,1 0,0" stroke-width="0.54"/>
+</g>
+<g transform="translate(562,72) rotate(-22)">  <!-- A-U, rising from valley 2 -->
+  <path d="M0,0 C4,-2 6,-9 5,-16 C3,-21 -3,-21 -5,-16 C-6,-9 -4,-2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="-1" x2="0" y2="-14" stroke-width="0.26"/>
+</g>
 
-  <!-- x=852 above, vine y≈48 -->
-  <g transform="translate(852,48) rotate(-24)">
-    <path d="M0,0 C5,-3 9,-11 6,-19 C4,-24 -4,-24 -6,-19 C-9,-11 -5,-3 0,0" stroke-width="0.65"/>
-    <line x1="0" y1="-1" x2="0" y2="-17" stroke-width="0.32"/>
-    <path d="M0,-6 Q4,-11 6,-14" stroke-width="0.26"/>
-    <path d="M0,-6 Q-4,-11 -6,-14" stroke-width="0.26"/>
-  </g>
-  <!-- x=874 below, vine y≈44 -->
-  <g transform="translate(874,44) rotate(20)">
-    <path d="M0,0 C3,2 5,7 4,12 C2,15 -2,15 -4,12 C-5,7 -3,2 0,0" stroke-width="0.58"/>
-  </g>
-  <!-- x=935 above, vine y≈60 -->
-  <g transform="translate(935,60) rotate(-18)">
-    <path d="M0,0 C4,-3 7,-9 5,-15 C3,-19 -3,-19 -5,-15 C-7,-9 -4,-3 0,0" stroke-width="0.62"/>
-    <line x1="0" y1="-1" x2="0" y2="-13" stroke-width="0.28"/>
-    <path d="M0,-5 Q3,-9 5,-12" stroke-width="0.24"/>
-    <path d="M0,-5 Q-3,-9 -5,-12" stroke-width="0.24"/>
-  </g>
-  <!-- x=952 below, vine y≈70 -->
-  <g transform="translate(952,70) rotate(22)">
-    <path d="M0,0 C4,3 6,8 4,13 C3,16 -3,16 -4,13 C-6,8 -4,3 0,0" stroke-width="0.6"/>
-    <line x1="0" y1="1" x2="0" y2="12" stroke-width="0.28"/>
-    <path d="M0,5 Q3,8 4,11" stroke-width="0.24"/>
-    <path d="M0,5 Q-3,8 -4,11" stroke-width="0.24"/>
-  </g>
-  <!-- x=1018 above, vine y≈50 (large leaf near Rose 3) -->
-  <g transform="translate(1018,50) rotate(-15)">
-    <path d="M0,0 C5,-3 9,-11 6,-19 C4,-24 -4,-24 -6,-19 C-9,-11 -5,-3 0,0" stroke-width="0.65"/>
-    <line x1="0" y1="-1" x2="0" y2="-17" stroke-width="0.32"/>
-    <path d="M0,-6 Q4,-11 6,-14" stroke-width="0.26"/>
-    <path d="M0,-6 Q-4,-11 -6,-14" stroke-width="0.26"/>
-    <path d="M0,-12 Q3,-14 4,-16" stroke-width="0.22"/>
-    <path d="M0,-12 Q-3,-14 -4,-16" stroke-width="0.22"/>
-  </g>
-  <!-- x=1098 above, vine y≈58 -->
-  <g transform="translate(1098,58) rotate(-20)">
-    <path d="M0,0 C4,-3 7,-9 5,-15 C3,-19 -3,-19 -5,-15 C-7,-9 -4,-3 0,0" stroke-width="0.62"/>
-    <line x1="0" y1="-1" x2="0" y2="-13" stroke-width="0.28"/>
-    <path d="M0,-5 Q3,-9 5,-12" stroke-width="0.24"/>
-    <path d="M0,-5 Q-3,-9 -5,-12" stroke-width="0.24"/>
-  </g>
-  <!-- x=1118 below, vine y≈60 -->
-  <g transform="translate(1118,60) rotate(18)">
-    <path d="M0,0 C3,2 5,7 4,12 C2,15 -2,15 -4,12 C-5,7 -3,2 0,0" stroke-width="0.6"/>
-  </g>
-  <!-- x=1162 above, vine y≈50 -->
-  <g transform="translate(1162,50) rotate(-25)">
-    <path d="M0,0 C4,-3 7,-9 5,-15 C3,-19 -3,-19 -5,-15 C-7,-9 -4,-3 0,0" stroke-width="0.62"/>
-    <line x1="0" y1="-1" x2="0" y2="-13" stroke-width="0.28"/>
-  </g>
-  <!-- x=1182 below, vine y≈52 -->
-  <g transform="translate(1182,52) rotate(16)">
-    <path d="M0,0 C3,2 5,7 4,12 C2,15 -2,15 -4,12 C-5,7 -3,2 0,0" stroke-width="0.58"/>
-  </g>
+<!-- MID SECTION (580–800) -->
+<g transform="translate(600,40) rotate(-20)">  <!-- A-U, with extra veins -->
+  <path d="M0,0 C4,-2 6,-9 5,-16 C3,-21 -3,-21 -5,-16 C-6,-9 -4,-2 0,0" stroke-width="0.65"/>
+  <line x1="0" y1="-1" x2="0" y2="-14"   stroke-width="0.28"/>
+  <path d="M0,-5 Q3,-8 5,-12"    stroke-width="0.24"/>
+  <path d="M0,-5 Q-3,-8 -5,-12"  stroke-width="0.24"/>
+  <path d="M0,-10 Q2,-12 3,-14"  stroke-width="0.2"/>
+  <path d="M0,-10 Q-2,-12 -3,-14" stroke-width="0.2"/>
+</g>
+<g transform="translate(614,40) rotate(-10)">  <!-- B-U -->
+  <path d="M0,0 C6,-2 10,-6 9,-12 C7,-16 -7,-16 -9,-12 C-10,-6 -6,-2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="-1" x2="0" y2="-11" stroke-width="0.26"/>
+  <path d="M0,-4 Q4,-7 7,-10"  stroke-width="0.22"/>
+  <path d="M0,-4 Q-4,-7 -7,-10" stroke-width="0.22"/>
+</g>
+<g transform="translate(642,28) rotate(14)">  <!-- D-Dn -->
+  <path d="M0,0 C3,1 4,5 3,9 C2,12 -2,12 -3,9 C-4,5 -3,1 0,0" stroke-width="0.54"/>
+</g>
+<g transform="translate(668,44) rotate(-24)">  <!-- C-U -->
+  <path d="M0,0 C5,-2 9,-7 8,-14 C6,-19 -2,-20 -5,-15 C-7,-10 -4,-3 0,0" stroke-width="0.62"/>
+</g>
+<g transform="translate(700,59) rotate(22)">  <!-- B-Dn -->
+  <path d="M0,0 C6,2 10,6 9,12 C7,16 -7,16 -9,12 C-10,6 -6,2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="1" x2="0" y2="11" stroke-width="0.26"/>
+  <path d="M0,4 Q4,7 7,10"  stroke-width="0.22"/>
+  <path d="M0,4 Q-4,7 -7,10" stroke-width="0.22"/>
+</g>
+<g transform="translate(741,51) rotate(-28)">  <!-- A-U -->
+  <path d="M0,0 C4,-2 6,-9 5,-16 C3,-21 -3,-21 -5,-16 C-6,-9 -4,-2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="-1" x2="0" y2="-14" stroke-width="0.26"/>
+</g>
+<g transform="translate(750,51) rotate(16)">  <!-- D-Dn -->
+  <path d="M0,0 C3,1 4,5 3,9 C2,12 -2,12 -3,9 C-4,5 -3,1 0,0" stroke-width="0.54"/>
+</g>
+<g transform="translate(772,40) rotate(-18)">  <!-- B-U -->
+  <path d="M0,0 C6,-2 10,-6 9,-12 C7,-16 -7,-16 -9,-12 C-10,-6 -6,-2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="-1" x2="0" y2="-11" stroke-width="0.26"/>
+  <path d="M0,-4 Q4,-7 7,-10"  stroke-width="0.22"/>
+  <path d="M0,-4 Q-4,-7 -7,-10" stroke-width="0.22"/>
+</g>
+
+<!-- RIGHT SECTION (800–1200) -->
+<g transform="translate(823,56) rotate(-25)">  <!-- A-U -->
+  <path d="M0,0 C4,-2 6,-9 5,-16 C3,-21 -3,-21 -5,-16 C-6,-9 -4,-2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="-1" x2="0" y2="-14" stroke-width="0.26"/>
+  <path d="M0,-5 Q3,-8 5,-12"   stroke-width="0.22"/>
+  <path d="M0,-5 Q-3,-8 -5,-12" stroke-width="0.22"/>
+</g>
+<g transform="translate(832,56) rotate(18)">  <!-- C-Dn -->
+  <path d="M0,0 C5,2 9,7 8,14 C6,19 -2,20 -5,15 C-7,10 -4,3 0,0" stroke-width="0.6"/>
+</g>
+<g transform="translate(860,74) rotate(24)">  <!-- B-Dn, local valley -->
+  <path d="M0,0 C6,2 10,6 9,12 C7,16 -7,16 -9,12 C-10,6 -6,2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="1" x2="0" y2="11" stroke-width="0.26"/>
+</g>
+<g transform="translate(872,74) rotate(12)">  <!-- D-Dn -->
+  <path d="M0,0 C3,1 4,5 3,9 C2,12 -2,12 -3,9 C-4,5 -3,1 0,0" stroke-width="0.54"/>
+</g>
+<g transform="translate(902,56) rotate(-22)">  <!-- A-U -->
+  <path d="M0,0 C4,-2 6,-9 5,-16 C3,-21 -3,-21 -5,-16 C-6,-9 -4,-2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="-1" x2="0" y2="-14" stroke-width="0.26"/>
+  <path d="M0,-5 Q3,-8 5,-12"   stroke-width="0.22"/>
+  <path d="M0,-5 Q-3,-8 -5,-12" stroke-width="0.22"/>
+</g>
+<g transform="translate(935,36) rotate(-16)">  <!-- D-U, near Rose3 -->
+  <path d="M0,0 C3,-1 4,-5 3,-9 C2,-12 -2,-12 -3,-9 C-4,-5 -3,-1 0,0" stroke-width="0.54"/>
+</g>
+<g transform="translate(955,36) rotate(20)">  <!-- D-Dn -->
+  <path d="M0,0 C3,1 4,5 3,9 C2,12 -2,12 -3,9 C-4,5 -3,1 0,0" stroke-width="0.54"/>
+</g>
+<g transform="translate(988,44) rotate(-26)">  <!-- A-U -->
+  <path d="M0,0 C4,-2 6,-9 5,-16 C3,-21 -3,-21 -5,-16 C-6,-9 -4,-2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="-1" x2="0" y2="-14" stroke-width="0.26"/>
+</g>
+<g transform="translate(1008,63) rotate(22)">  <!-- B-Dn -->
+  <path d="M0,0 C6,2 10,6 9,12 C7,16 -7,16 -9,12 C-10,6 -6,2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="1" x2="0" y2="11" stroke-width="0.26"/>
+</g>
+<g transform="translate(1066,55) rotate(-20)">  <!-- A-U -->
+  <path d="M0,0 C4,-2 6,-9 5,-16 C3,-21 -3,-21 -5,-16 C-6,-9 -4,-2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="-1" x2="0" y2="-14" stroke-width="0.26"/>
+</g>
+<g transform="translate(1076,55) rotate(16)">  <!-- D-Dn -->
+  <path d="M0,0 C3,1 4,5 3,9 C2,12 -2,12 -3,9 C-4,5 -3,1 0,0" stroke-width="0.54"/>
+</g>
+<g transform="translate(1114,47) rotate(-22)">  <!-- B-U -->
+  <path d="M0,0 C6,-2 10,-6 9,-12 C7,-16 -7,-16 -9,-12 C-10,-6 -6,-2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="-1" x2="0" y2="-11" stroke-width="0.26"/>
+  <path d="M0,-4 Q4,-7 7,-10"  stroke-width="0.22"/>
+  <path d="M0,-4 Q-4,-7 -7,-10" stroke-width="0.22"/>
+</g>
+<g transform="translate(1161,59) rotate(-18)">  <!-- D-U -->
+  <path d="M0,0 C3,-1 4,-5 3,-9 C2,-12 -2,-12 -3,-9 C-4,-5 -3,-1 0,0" stroke-width="0.54"/>
+</g>
+<g transform="translate(1172,59) rotate(15)">  <!-- D-Dn -->
+  <path d="M0,0 C3,1 4,5 3,9 C2,12 -2,12 -3,9 C-4,5 -3,1 0,0" stroke-width="0.54"/>
+</g>
+<g transform="translate(1188,62) rotate(-24)">  <!-- A-U, trailing end -->
+  <path d="M0,0 C4,-2 6,-9 5,-16 C3,-21 -3,-21 -5,-16 C-6,-9 -4,-2 0,0" stroke-width="0.62"/>
+  <line x1="0" y1="-1" x2="0" y2="-14" stroke-width="0.26"/>
+</g>
+
+<!-- ═══ BERRY CLUSTERS — small filled dots with fine stems ═══ -->
+<!-- Cluster below vine near x=694 -->
+<line x1="702" y1="59" x2="695" y2="67" stroke-width="0.4"/>
+<line x1="702" y1="59" x2="702" y2="71" stroke-width="0.4"/>
+<line x1="702" y1="59" x2="710" y2="68" stroke-width="0.4"/>
+<line x1="702" y1="59" x2="705" y2="63" stroke-width="0.4"/>
+<circle cx="694" cy="68" r="1.9" fill="#6d6d6d" stroke="none"/>
+<circle cx="701" cy="72" r="1.7" fill="#6d6d6d" stroke="none"/>
+<circle cx="710" cy="69" r="2"   fill="#6d6d6d" stroke="none"/>
+<circle cx="705" cy="63" r="1.4" fill="#6d6d6d" stroke="none"/>
+
+<!-- Small cluster above vine near x=1140 -->
+<line x1="1140" y1="49" x2="1137" y2="55" stroke-width="0.38"/>
+<line x1="1140" y1="49" x2="1144" y2="57" stroke-width="0.38"/>
+<line x1="1140" y1="49" x2="1140" y2="61" stroke-width="0.38"/>
+<circle cx="1136" cy="56" r="1.6" fill="#6d6d6d" stroke="none"/>
+<circle cx="1144" cy="58" r="1.4" fill="#6d6d6d" stroke="none"/>
+<circle cx="1139" cy="62" r="1.5" fill="#6d6d6d" stroke="none"/>
 
 </svg>
