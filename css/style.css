@@ -287,12 +287,9 @@ p { max-width: 65ch; }
 }
 
 .hero__logo-wrap {
-  width: clamp(240px, 46vw, 420px);
+  width: clamp(260px, 46vw, 440px);
   aspect-ratio: 1;
   margin: 0 auto 2.25rem;
-  background: var(--white);
-  border-radius: 50%;
-  overflow: hidden;
 }
 
 .hero__logo {
