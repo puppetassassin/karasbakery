@@ -868,18 +868,18 @@ p { max-width: 65ch; }
 
 /* ---- Floral decorative elements ---- */
 .floral-divider {
-  display: flex;
-  justify-content: center;
-  padding: 2.5rem 0;
-  overflow: hidden;
+  padding: 1.5rem 0;
+  overflow: visible;
+  text-align: center;
 }
 
 .floral-divider img {
   width: 100%;
-  max-width: 100%;
+  max-width: 1200px;
   height: auto;
   display: block;
-  opacity: 0.3;
+  margin: 0 auto;
+  opacity: 0.78;
 }
 
 /* ---- Floating logo ---- */
